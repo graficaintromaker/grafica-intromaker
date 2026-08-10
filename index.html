@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#111111" />
+  <meta name="theme-color" content="#151515" />
   <title>Gráfica Intromaker | Impressos e Personalizados</title>
-  <meta name="description" content="Cartões, panfletos, adesivos, convites, sacolas e materiais personalizados. Solicite seu orçamento online." />
+  <meta name="description" content="Cartões, tags, adesivos, panfletos, raspadinhas, materiais para lojas e personalizados. Solicite seu orçamento pelo WhatsApp." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,18 +16,21 @@
     <div class="container nav">
       <a class="brand" href="#inicio" aria-label="Gráfica Intromaker">
         <span class="brand-mark">I</span>
-        <span>
+        <span class="brand-copy">
           <strong>Intromaker</strong>
           <small>Gráfica & Personalizados</small>
         </span>
       </a>
-      <nav class="desktop-nav">
+
+      <nav class="desktop-nav" aria-label="Navegação principal">
         <a href="#produtos">Produtos</a>
-        <a href="#como-funciona">Como funciona</a>
+        <a href="#portfolio">Trabalhos reais</a>
+        <a href="#como-funciona">Como comprar</a>
         <a href="#contato">Contato</a>
       </nav>
-      <button class="cart-button" id="openCart" type="button">
-        Carrinho <span id="cartCount">0</span>
+
+      <button class="cart-button" id="openCart" type="button" aria-label="Abrir carrinho">
+        Pedido <span id="cartCount">0</span>
       </button>
     </div>
   </header>
@@ -36,32 +39,33 @@
     <section class="hero" id="inicio">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">IMPRESSOS QUE VALORIZAM SUA MARCA</span>
-          <h1>Seu material gráfico com acabamento profissional.</h1>
-          <p>Escolha o produto, informe quantidade e acabamento e envie seu pedido. Nós confirmamos o orçamento e os detalhes da arte pelo WhatsApp.</p>
+          <span class="eyebrow">PRODUÇÃO REAL • ACABAMENTO PROFISSIONAL</span>
+          <h1>Impressos que fazem sua marca ser lembrada.</h1>
+          <p>Cartões, tags, adesivos, materiais promocionais e personalizados produzidos para valorizar cada detalhe da sua marca.</p>
+
           <div class="hero-actions">
             <a class="btn primary" href="#produtos">Ver produtos</a>
-            <a class="btn secondary" href="https://wa.me/553173581976" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <a class="btn secondary" href="https://wa.me/553173581976" target="_blank" rel="noopener">Pedir orçamento</a>
           </div>
-          <div class="trust-row">
+
+          <div class="trust-row" aria-label="Diferenciais">
             <span>✓ Atendimento personalizado</span>
+            <span>✓ Diversos acabamentos</span>
             <span>✓ Produção sob medida</span>
-            <span>✓ Retirada ou entrega a combinar</span>
           </div>
         </div>
-        <div class="hero-card" aria-hidden="true">
-          <div class="mock-card card-1">
-            <span>CARTÕES</span>
-            <strong>Acabamentos especiais</strong>
-          </div>
-          <div class="mock-card card-2">
-            <span>ADESIVOS</span>
-            <strong>Personalizados</strong>
-          </div>
-          <div class="mock-card card-3">
-            <span>PANFLETOS</span>
-            <strong>Divulgue sua marca</strong>
-          </div>
+
+        <div class="hero-gallery" aria-label="Alguns trabalhos produzidos pela Gráfica Intromaker">
+          <figure class="hero-photo hero-photo-main">
+            <img src="assets/adesivos-hotstamping.webp" alt="Adesivos redondos com acabamento metalizado dourado" />
+          </figure>
+          <figure class="hero-photo hero-photo-top">
+            <img src="assets/cartao-rosa.webp" alt="Cartões em tons de rosa produzidos pela gráfica" />
+          </figure>
+          <figure class="hero-photo hero-photo-bottom">
+            <img src="assets/tags-moda.webp" alt="Tags de roupas personalizadas" />
+          </figure>
+          <span class="hero-stamp">Fotos reais<br>de produção</span>
         </div>
       </div>
     </section>
@@ -71,20 +75,68 @@
         <div class="section-heading">
           <div>
             <span class="eyebrow">CATÁLOGO</span>
-            <h2>Escolha o que você precisa</h2>
+            <h2>Escolha o seu material</h2>
           </div>
-          <p>Os valores finais dependem de quantidade, papel, tamanho e acabamento. Nesta versão, o pedido vai para orçamento antes do pagamento.</p>
+          <p>O valor final depende de quantidade, tamanho, papel e acabamento. Adicione os itens ao pedido e receba o orçamento pelo WhatsApp.</p>
         </div>
 
-        <div class="filters" role="tablist" aria-label="Categorias">
-          <button class="filter active" data-filter="todos">Todos</button>
-          <button class="filter" data-filter="cartoes">Cartões</button>
-          <button class="filter" data-filter="divulgacao">Divulgação</button>
-          <button class="filter" data-filter="adesivos">Adesivos</button>
-          <button class="filter" data-filter="personalizados">Personalizados</button>
+        <div class="filters" role="tablist" aria-label="Categorias de produtos">
+          <button class="filter active" data-filter="todos" type="button">Todos</button>
+          <button class="filter" data-filter="cartoes" type="button">Cartões</button>
+          <button class="filter" data-filter="tags" type="button">Tags</button>
+          <button class="filter" data-filter="adesivos" type="button">Adesivos</button>
+          <button class="filter" data-filter="divulgacao" type="button">Divulgação</button>
+          <button class="filter" data-filter="promocionais" type="button">Promocionais</button>
         </div>
 
         <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-heading portfolio-heading">
+          <div>
+            <span class="eyebrow">TRABALHOS REAIS</span>
+            <h2>Produções da Intromaker</h2>
+          </div>
+          <p>Uma seleção de materiais que já passaram pela nossa produção.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <button class="portfolio-item tall" data-image="assets/cartoes-qr.webp" data-alt="Cartões com QR code" type="button">
+            <img src="assets/cartoes-qr.webp" alt="Cartões personalizados com QR code" loading="lazy" />
+            <span>Cartões com QR Code</span>
+          </button>
+          <button class="portfolio-item" data-image="assets/tags-premium.webp" data-alt="Tags premium" type="button">
+            <img src="assets/tags-premium.webp" alt="Tags premium para loja" loading="lazy" />
+            <span>Tags premium</span>
+          </button>
+          <button class="portfolio-item" data-image="assets/cartao-fidelidade.webp" data-alt="Cartão fidelidade" type="button">
+            <img src="assets/cartao-fidelidade.webp" alt="Cartão fidelidade personalizado" loading="lazy" />
+            <span>Cartão fidelidade</span>
+          </button>
+          <button class="portfolio-item wide" data-image="assets/cartao-natal.webp" data-alt="Cartão com acabamento metalizado" type="button">
+            <img src="assets/cartao-natal.webp" alt="Cartão com acabamento metalizado dourado" loading="lazy" />
+            <span>Acabamento metalizado</span>
+          </button>
+          <button class="portfolio-item" data-image="assets/tags-semijoias.webp" data-alt="Tags para semijoias" type="button">
+            <img src="assets/tags-semijoias.webp" alt="Tags para semijoias" loading="lazy" />
+            <span>Tags para semijoias</span>
+          </button>
+          <button class="portfolio-item tall" data-image="assets/cartao-cuidados.webp" data-alt="Cartões de cuidados" type="button">
+            <img src="assets/cartao-cuidados.webp" alt="Cartão de agradecimento e cuidados" loading="lazy" />
+            <span>Cuidados e garantia</span>
+          </button>
+          <button class="portfolio-item" data-image="assets/panfleto-acai.webp" data-alt="Panfleto promocional" type="button">
+            <img src="assets/panfleto-acai.webp" alt="Panfleto promocional colorido" loading="lazy" />
+            <span>Panfletos</span>
+          </button>
+          <button class="portfolio-item" data-image="assets/raspadinha.webp" data-alt="Raspadinha promocional" type="button">
+            <img src="assets/raspadinha.webp" alt="Raspadinha promocional personalizada" loading="lazy" />
+            <span>Raspadinhas</span>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -97,20 +149,34 @@
           </div>
         </div>
         <div class="steps">
-          <article><span>1</span><h3>Escolha</h3><p>Selecione os produtos e informe a quantidade desejada.</p></article>
-          <article><span>2</span><h3>Envie o pedido</h3><p>Seu carrinho é enviado pelo WhatsApp com todas as informações.</p></article>
-          <article><span>3</span><h3>Confirmação</h3><p>Confirmamos arte, acabamento, prazo e valor final.</p></article>
-          <article><span>4</span><h3>Pagamento</h3><p>Você recebe a forma de pagamento combinada para concluir.</p></article>
+          <article><span>1</span><h3>Escolha</h3><p>Selecione os produtos que você precisa e informe a quantidade desejada.</p></article>
+          <article><span>2</span><h3>Envie o pedido</h3><p>Seu pedido é organizado e enviado direto para o nosso WhatsApp.</p></article>
+          <article><span>3</span><h3>Defina os detalhes</h3><p>Confirmamos tamanho, papel, acabamento, arte e prazo de produção.</p></article>
+          <article><span>4</span><h3>Aprove o orçamento</h3><p>Você recebe o valor final e as orientações para concluir o pedido.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contato">
+    <section class="section showcase">
+      <div class="container showcase-grid">
+        <div class="showcase-photo">
+          <img src="assets/manual-orientacoes.webp" alt="Material informativo impresso" loading="lazy" />
+        </div>
+        <div class="showcase-copy">
+          <span class="eyebrow">ALÉM DO BÁSICO</span>
+          <h2>Do cartão simples ao material especial.</h2>
+          <p>Produzimos materiais para lojas, profissionais, eventos, campanhas e marcas que precisam apresentar seus produtos com mais cuidado e profissionalismo.</p>
+          <a class="text-link" href="https://wa.me/553173581976" target="_blank" rel="noopener">Tenho uma ideia diferente →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
       <div class="container contact-grid">
         <div>
           <span class="eyebrow">ATENDIMENTO</span>
           <h2>Vamos produzir seu material?</h2>
-          <p>Envie sua ideia, arte ou referência. A Gráfica Intromaker orienta sobre formato, papel, acabamento e quantidade.</p>
+          <p>Envie sua arte, referência ou apenas a ideia. A Gráfica Intromaker orienta sobre formato, papel, acabamento e quantidade.</p>
         </div>
         <div class="contact-card">
           <a href="https://wa.me/553173581976" target="_blank" rel="noopener"><strong>WhatsApp</strong><span>Falar agora</span></a>
@@ -136,20 +202,25 @@
     <div class="cart-header">
       <div>
         <small>SEU PEDIDO</small>
-        <h2>Carrinho</h2>
+        <h2>Orçamento</h2>
       </div>
-      <button id="closeCart" class="icon-button" aria-label="Fechar carrinho">×</button>
+      <button id="closeCart" class="icon-button" type="button" aria-label="Fechar pedido">×</button>
     </div>
     <div class="cart-items" id="cartItems"></div>
     <div class="cart-note">
       <label for="customerNote">Observações</label>
-      <textarea id="customerNote" rows="3" placeholder="Ex.: preciso de laminação fosca e verniz localizado."></textarea>
+      <textarea id="customerNote" rows="4" placeholder="Ex.: quero laminação fosca, verniz localizado, 500 unidades..."></textarea>
     </div>
     <div class="cart-footer">
       <p>O valor final será confirmado no atendimento.</p>
-      <button class="btn primary full" id="checkoutWhatsapp">Enviar pedido pelo WhatsApp</button>
+      <button class="btn primary full" id="checkoutWhatsapp" type="button">Enviar pelo WhatsApp</button>
     </div>
   </aside>
+
+  <div class="lightbox" id="lightbox" hidden aria-hidden="true">
+    <button class="lightbox-close" id="closeLightbox" type="button" aria-label="Fechar imagem">×</button>
+    <img id="lightboxImage" src="" alt="" />
+  </div>
 
   <script src="app.js"></script>
 </body>

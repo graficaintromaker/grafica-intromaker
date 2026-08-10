@@ -1,16 +1,102 @@
-
 const WHATSAPP = "553173581976";
 
 const products = [
-  {id:"cartao-visita", name:"Cartão de visita", category:"cartoes", categoryLabel:"Cartões", desc:"Modelos profissionais com opções de laminação, verniz localizado e diferentes papéis.", unit:"quantidade a definir"},
-  {id:"cartao-agradecimento", name:"Cartão de agradecimento", category:"cartoes", categoryLabel:"Cartões", desc:"Ideal para acompanhar pedidos e fortalecer a identidade da sua marca.", unit:"quantidade a definir"},
-  {id:"panfleto", name:"Panfletos", category:"divulgacao", categoryLabel:"Divulgação", desc:"Divulgação de promoções, eventos, serviços e campanhas em diversos formatos.", unit:"quantidade a definir"},
-  {id:"folder", name:"Folders", category:"divulgacao", categoryLabel:"Divulgação", desc:"Apresentação organizada de serviços, cardápios e informações comerciais.", unit:"quantidade a definir"},
-  {id:"adesivo", name:"Adesivos personalizados", category:"adesivos", categoryLabel:"Adesivos", desc:"Adesivos em diferentes formatos, tamanhos e materiais para embalagens e marcas.", unit:"quantidade a definir"},
-  {id:"etiqueta", name:"Etiquetas", category:"adesivos", categoryLabel:"Adesivos", desc:"Etiquetas para produtos, lembrancinhas, embalagens e identificação.", unit:"quantidade a definir"},
-  {id:"sacola", name:"Sacolas personalizadas", category:"personalizados", categoryLabel:"Personalizados", desc:"Sacolas para lojas e eventos com personalização da sua marca.", unit:"quantidade a definir"},
-  {id:"convite", name:"Convites", category:"personalizados", categoryLabel:"Personalizados", desc:"Convites personalizados para festas, eventos, igrejas e comemorações.", unit:"quantidade a definir"},
-  {id:"material-evento", name:"Materiais para eventos", category:"personalizados", categoryLabel:"Personalizados", desc:"Ingressos, tags, cartões, placas e outros materiais produzidos sob medida.", unit:"sob consulta"}
+  {
+    id:"cartao-visita",
+    name:"Cartões de visita",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartões profissionais com opções de laminação, verniz localizado, cantos especiais e outros acabamentos.",
+    image:"assets/cartao-rosa.webp"
+  },
+  {
+    id:"cartao-agradecimento",
+    name:"Cartões de agradecimento",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Para acompanhar pedidos, apresentar cuidados, garantias e fortalecer a experiência da sua marca.",
+    image:"assets/cartao-cuidados.webp"
+  },
+  {
+    id:"cartao-qr",
+    name:"Cartões com QR Code",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartões com QR Code para Instagram, catálogo, avaliação, pagamento, cardápio ou página de destino.",
+    image:"assets/cartoes-qr.webp"
+  },
+  {
+    id:"tag-moda",
+    name:"Tags para roupas",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Tags para lojas e confecções com furo, informações de tamanho, troca, preço e identidade visual.",
+    image:"assets/tags-moda.webp"
+  },
+  {
+    id:"tag-semijoias",
+    name:"Tags para semijoias",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Modelos para brincos, colares, pulseiras e pequenos acessórios, com formatos e acabamentos personalizados.",
+    image:"assets/tags-semijoias.webp"
+  },
+  {
+    id:"tag-premium",
+    name:"Tags com acabamento especial",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Modelos diferenciados para marcas que buscam uma apresentação mais sofisticada.",
+    image:"assets/tags-premium.webp"
+  },
+  {
+    id:"adesivos",
+    name:"Adesivos personalizados",
+    category:"adesivos",
+    categoryLabel:"Adesivos",
+    desc:"Adesivos em diferentes formatos, tamanhos e materiais para embalagens, produtos, eventos e marcas.",
+    image:"assets/adesivos-hotstamping.webp"
+  },
+  {
+    id:"panfletos",
+    name:"Panfletos e flyers",
+    category:"divulgacao",
+    categoryLabel:"Divulgação",
+    desc:"Materiais para promoções, delivery, eventos, serviços, lançamentos e campanhas comerciais.",
+    image:"assets/panfleto-acai.webp"
+  },
+  {
+    id:"informativos",
+    name:"Materiais informativos",
+    category:"divulgacao",
+    categoryLabel:"Divulgação",
+    desc:"Manuais, orientações, fichas, informativos e materiais impressos para profissionais e empresas.",
+    image:"assets/manual-orientacoes.webp"
+  },
+  {
+    id:"fidelidade",
+    name:"Cartões fidelidade",
+    category:"promocionais",
+    categoryLabel:"Promocionais",
+    desc:"Crie recorrência com cartões de fidelidade personalizados para sua loja, salão ou serviço.",
+    image:"assets/cartao-fidelidade.webp"
+  },
+  {
+    id:"raspadinhas",
+    name:"Raspadinhas promocionais",
+    category:"promocionais",
+    categoryLabel:"Promocionais",
+    desc:"Campanhas de raspe e ganhe para lojas, eventos e ações promocionais com a identidade da sua marca.",
+    image:"assets/raspadinha.webp"
+  },
+  {
+    id:"acabamento-metalizado",
+    name:"Acabamentos metalizados",
+    category:"promocionais",
+    categoryLabel:"Acabamentos",
+    desc:"Aplicações metalizadas que valorizam cartões, tags, adesivos e materiais comemorativos.",
+    image:"assets/cartao-natal.webp"
+  }
 ];
 
 const state = {
@@ -24,19 +110,24 @@ const cartDrawer = document.getElementById("cartDrawer");
 const drawerBackdrop = document.getElementById("drawerBackdrop");
 const cartItems = document.getElementById("cartItems");
 const cartCount = document.getElementById("cartCount");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
 
 function renderProducts(){
   const list = state.filter === "todos" ? products : products.filter(p => p.category === state.filter);
   grid.innerHTML = list.map(p => `
     <article class="product-card">
-      <div class="product-visual"><div class="shape">${p.name}</div></div>
+      <div class="product-visual">
+        <img src="${p.image}" alt="Exemplo de ${p.name.toLowerCase()} produzido pela Gráfica Intromaker" loading="lazy" />
+        <span class="product-photo-label">Foto real</span>
+      </div>
       <div class="product-body">
         <span class="category">${p.categoryLabel}</span>
         <h3>${p.name}</h3>
         <p>${p.desc}</p>
         <div class="product-meta">
           <strong>Orçamento personalizado</strong>
-          <div class="qty">
+          <div class="qty" aria-label="Quantidade">
             <button type="button" aria-label="Diminuir" onclick="changeQty('${p.id}',-1)">−</button>
             <span id="qty-${p.id}">${state.quantities[p.id]}</span>
             <button type="button" aria-label="Aumentar" onclick="changeQty('${p.id}',1)">+</button>
@@ -68,7 +159,7 @@ function updateCart(){
   cartCount.textContent = total;
 
   if(!state.cart.length){
-    cartItems.innerHTML = `<div class="empty">Seu carrinho está vazio.</div>`;
+    cartItems.innerHTML = `<div class="empty">Seu pedido está vazio.<br>Adicione os produtos que deseja orçar.</div>`;
     return;
   }
 
@@ -76,9 +167,9 @@ function updateCart(){
     <div class="cart-item">
       <div>
         <h4>${i.name}</h4>
-        <p>Quantidade informada: ${i.qty}</p>
+        <p>Quantidade selecionada: ${i.qty}</p>
       </div>
-      <button class="remove" onclick="removeItem('${i.id}')">Remover</button>
+      <button class="remove" type="button" onclick="removeItem('${i.id}')">Remover</button>
     </div>`).join("");
 }
 
@@ -91,11 +182,13 @@ function openCart(){
   cartDrawer.classList.add("open");
   cartDrawer.setAttribute("aria-hidden","false");
   drawerBackdrop.hidden = false;
+  document.body.classList.add("no-scroll");
 }
 function closeCart(){
   cartDrawer.classList.remove("open");
   cartDrawer.setAttribute("aria-hidden","true");
   drawerBackdrop.hidden = true;
+  document.body.classList.remove("no-scroll");
 }
 
 document.getElementById("openCart").addEventListener("click",openCart);
@@ -120,13 +213,42 @@ document.getElementById("checkoutWhatsapp").addEventListener("click",() => {
   const lines = [
     "Olá! Gostaria de solicitar um orçamento pela loja da Gráfica Intromaker.",
     "",
-    ...state.cart.map((i,idx) => `${idx+1}. ${i.name} — quantidade: ${i.qty}`),
+    ...state.cart.map((i,idx) => `${idx+1}. ${i.name} — quantidade selecionada: ${i.qty}`),
     "",
     note ? `Observações: ${note}` : "Observações: nenhuma.",
     "",
     "Pode me informar valor, prazo e opções de acabamento?"
   ];
   window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(lines.join("\n"))}`,"_blank");
+});
+
+document.querySelectorAll(".portfolio-item").forEach(item => {
+  item.addEventListener("click", () => {
+    lightboxImage.src = item.dataset.image;
+    lightboxImage.alt = item.dataset.alt || "Trabalho produzido pela Gráfica Intromaker";
+    lightbox.hidden = false;
+    lightbox.setAttribute("aria-hidden","false");
+    document.body.classList.add("no-scroll");
+  });
+});
+
+function closeLightbox(){
+  lightbox.hidden = true;
+  lightbox.setAttribute("aria-hidden","true");
+  lightboxImage.src = "";
+  document.body.classList.remove("no-scroll");
+}
+
+document.getElementById("closeLightbox").addEventListener("click", closeLightbox);
+lightbox.addEventListener("click", (e) => {
+  if(e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener("keydown", (e) => {
+  if(e.key === "Escape"){
+    if(!lightbox.hidden) closeLightbox();
+    else closeCart();
+  }
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();

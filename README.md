@@ -1,31 +1,16 @@
-# Loja Gráfica Intromaker
+# Loja Gráfica Intromaker — versão com fotos reais
 
-Versão inicial estática, pronta para publicar na Vercel.
+Versão atualizada da loja estática para Vercel.
 
-## Arquivos
-- `index.html`
-- `styles.css`
-- `app.js`
+## Novidades desta versão
+- Fotos reais de produtos na página inicial
+- Fotos reais nos cards do catálogo
+- Seção "Trabalhos reais" com galeria ampliável
+- Novas categorias: cartões, tags, adesivos, divulgação e promocionais
+- Carrinho para orçamento via WhatsApp mantido
+- Instagram e catálogo do WhatsApp mantidos
+- Layout responsivo para celular e computador
 
-## Como publicar na Vercel
-1. Crie uma conta no GitHub.
-2. Crie um repositório novo.
-3. Envie estes 3 arquivos para o repositório.
-4. Na Vercel, clique em **Add New > Project**.
-5. Importe o repositório do GitHub.
-6. Clique em **Deploy**.
-7. A Vercel criará um endereço `.vercel.app`.
-8. Depois, em **Settings > Domains**, conecte o domínio `graficaintromaker.com.br`.
-
-## Onde editar produtos
-No arquivo `app.js`, altere a lista `products`.
-
-## Pagamentos
-Esta primeira versão envia o carrinho para o WhatsApp para confirmação de valor.
-Quando você definir:
-- tabela de preços,
-- política de frete,
-- forma de pagamento,
-- link do Nubank ou outro checkout,
-
-o botão de finalização pode ser adaptado.
+## Publicação
+Substitua os arquivos da versão anterior no repositório pelos arquivos desta pasta, incluindo a pasta `assets`.
+A Vercel fará um novo deploy automaticamente após o commit.
