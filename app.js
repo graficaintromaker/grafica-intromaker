@@ -7,7 +7,7 @@ const products = [
     category:"cartoes",
     categoryLabel:"Cartões",
     desc:"Cartões profissionais com opções de laminação, verniz localizado, cantos especiais e outros acabamentos.",
-    image:"assets/cartao-rosa.webp"
+    image:"assets/03-cartoes-rosa.jpg"
   },
   {
     id:"cartao-agradecimento",
