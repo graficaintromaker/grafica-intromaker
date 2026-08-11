@@ -39,7 +39,7 @@ const products = [
     category:"tags",
     categoryLabel:"Tags",
     desc:"Modelos para brincos, colares, pulseiras e pequenos acessórios, com formatos e acabamentos personalizados.",
-    image:"assets/tags-semijoias.webp"
+    image:"assets/05-tags-semijoias.jpg"
   },
   {
     id:"tag-premium",
