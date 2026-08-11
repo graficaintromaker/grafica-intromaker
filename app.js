@@ -79,7 +79,7 @@ const products = [
     category:"promocionais",
     categoryLabel:"Promocionais",
     desc:"Crie recorrência com cartões de fidelidade personalizados para sua loja, salão ou serviço.",
-    image:"assets/cartao-fidelidade.webp"
+    image:"assets/07-cartao-fidelidade.jpg"
   },
   {
     id:"raspadinhas",
