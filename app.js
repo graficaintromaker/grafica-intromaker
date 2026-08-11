@@ -150,7 +150,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags em formato oval para roupas e acessórios, com impressão frente e verso e opção de furo.",
-  image:"assets/20220524-111734.jpg"
+  image:"20220524-111734.jpg"
 },
 
 {
