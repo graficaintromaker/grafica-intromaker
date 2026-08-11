@@ -105,7 +105,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags em papel kraft para roupas, presentes, cosméticos e produtos artesanais, com impressão personalizada e opção de furo.",
-  image:"assets/20260717-121649.jpg"
+  image:"20260717-121649.jpg"
 },
 
 {
