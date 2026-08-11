@@ -177,7 +177,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags personalizadas em cores vibrantes para roupas, lojas e confecções, com impressão profissional frente e verso.",
-  image:"assets/20220811-140712.jpg"
+  image:"20220811-140712.jpg"
 },
 
 {
