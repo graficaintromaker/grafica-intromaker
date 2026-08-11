@@ -55,7 +55,7 @@ const products = [
     category:"adesivos",
     categoryLabel:"Adesivos",
     desc:"Adesivos em diferentes formatos, tamanhos e materiais para embalagens, produtos, eventos e marcas.",
-    image:"assets/adesivos-hotstamping.webp"
+    image:"assets/06-adesivos-metalizados.jpg"
   },
   {
     id:"panfletos",
