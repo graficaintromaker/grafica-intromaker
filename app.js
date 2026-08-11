@@ -63,7 +63,7 @@ const products = [
     category:"divulgacao",
     categoryLabel:"Divulgação",
     desc:"Materiais para promoções, delivery, eventos, serviços, lançamentos e campanhas comerciais.",
-    assets/20250912_122212 - Copia.jpg
+    image:"assets/20250912_122212 - Copia.jpg"
   },
   {
     id:"informativos",
