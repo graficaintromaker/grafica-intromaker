@@ -23,7 +23,7 @@ const products = [
     category:"cartoes",
     categoryLabel:"Cartões",
     desc:"Cartões com QR Code para Instagram, catálogo, avaliação, pagamento, cardápio ou página de destino.",
-    image:"assets/cartoes-qr.webp"
+    image:"assets/01-cartoes-qr-code.jpg"
   },
   {
     id:"tag-moda",
