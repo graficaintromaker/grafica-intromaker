@@ -31,7 +31,7 @@ const products = [
     category:"tags",
     categoryLabel:"Tags",
     desc:"Tags para lojas e confecções com furo, informações de tamanho, troca, preço e identidade visual.",
-    image:"assets/tags-moda.webp"
+    image:"assets/02-tags-moda.jpg"
   },
   {
     id:"tag-semijoias",
