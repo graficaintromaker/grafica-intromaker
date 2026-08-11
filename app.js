@@ -81,7 +81,7 @@ const products = [
     desc:"Crie recorrência com cartões de fidelidade personalizados para sua loja, salão ou serviço.",
     image:"assets/07-cartao-fidelidade.jpg"
   },
-  {
+  
     {
   id:"raspadinhas",
   name:"Raspadinhas promocionais",
@@ -90,7 +90,7 @@ const products = [
   desc:"Campanhas de raspe e ganhe para lojas, eventos e ações promocionais com a identidade da sua marca.",
   image:"assets/08-raspadinha.jpg"
 },
-  },
+  
   {
     id:"acabamento-metalizado",
     name:"Acabamentos metalizados",
