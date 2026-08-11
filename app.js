@@ -159,7 +159,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags personalizadas para lojas de moda feminina, com campos para tamanho, valor, redes sociais e informações de troca.",
-  image:"assets/20220524-112729.jpg"
+  image:"20220524-112729.jpg"
 },
 
 {
