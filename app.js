@@ -188,7 +188,7 @@ image:"20220405-160502.jpg"
   desc:"Tags personalizadas com formatos e cortes especiais para valorizar a apresentação e a identidade da sua marca.",
   image:"20220909-155740.jpg"
 }
-  };
+  ];
 
 const state = {
   filter: "todos",
