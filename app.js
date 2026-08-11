@@ -87,7 +87,7 @@ const products = [
     category:"promocionais",
     categoryLabel:"Promocionais",
     desc:"Campanhas de raspe e ganhe para lojas, eventos e ações promocionais com a identidade da sua marca.",
-    image:"assets/raspadinha.webp"
+    image:"assets/08-raspadinha.jpg"
   },
   {
     id:"acabamento-metalizado",
