@@ -168,7 +168,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags sofisticadas para marcas de moda, com design diferenciado, impressão frente e verso e diversos acabamentos.",
-  image:"assets/20220615-131434.jpg"
+  image:"20220615-131434.jpg"
 },
 
 {
