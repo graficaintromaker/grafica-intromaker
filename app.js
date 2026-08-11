@@ -114,7 +114,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags personalizadas para lingerie com informações de tamanho, modelo, valor, troca e identidade da sua marca.",
-  image:"assets/20231002-141347.jpg"
+  image:"20231002-141347.jpg"
 },
 
 {
