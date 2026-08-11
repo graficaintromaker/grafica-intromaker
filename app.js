@@ -95,7 +95,7 @@ const products = [
     category:"promocionais",
     categoryLabel:"Acabamentos",
     desc:"Aplicações metalizadas que valorizam cartões, tags, adesivos e materiais comemorativos.",
-    image:"assets/cartao-natal.jpg"
+    image:"assets/06-adesivos-metalizados.jpg"
   }
 ];
 
