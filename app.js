@@ -15,7 +15,7 @@ const products = [
     category:"cartoes",
     categoryLabel:"Cartões",
     desc:"Para acompanhar pedidos, apresentar cuidados, garantias e fortalecer a experiência da sua marca.",
-    image:"assets/cartao-cuidados.webp"
+    image:"assets/cartao-cuidados.jpg"
   },
   {
     id:"cartao-qr",
