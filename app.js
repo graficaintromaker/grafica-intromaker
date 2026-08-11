@@ -132,7 +132,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags redondas personalizadas para roupas, presentes, embalagens e produtos, disponíveis em diferentes cores e acabamentos.",
-  image:"assets/20220302-153935.jpg"
+  image:"20220302-153935.jpg"
 },
 
 {
