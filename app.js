@@ -186,7 +186,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags personalizadas com formatos e cortes especiais para valorizar a apresentação e a identidade da sua marca.",
-  image:"assets/20220909-155740.jpg"
+  image:"20220909-155740.jpg"
 }
   };
 
