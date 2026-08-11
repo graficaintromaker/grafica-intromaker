@@ -10,7 +10,7 @@ const products = [
     image:"assets/03-cartoes-rosa.jpg"
   },
   {
-    image:"20220928_122913.jpg"
+    id:"cartao-agradecimento",
     name:"Cartões de agradecimento",
     category:"cartoes",
     categoryLabel:"Cartões",
