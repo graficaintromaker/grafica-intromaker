@@ -141,7 +141,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags coloridas para lojas infantis, com espaço para preço, informações de troca e dados da marca.",
-  image:"assets/20220405-160502.jpg"
+  image:"20220405-160502.jpg"
 },
 
 {
