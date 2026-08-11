@@ -82,12 +82,14 @@ const products = [
     image:"assets/07-cartao-fidelidade.jpg"
   },
   {
-    id:"raspadinhas",
-    name:"Raspadinhas promocionais",
-    category:"promocionais",
-    categoryLabel:"Promocionais",
-    desc:"Campanhas de raspe e ganhe para lojas, eventos e ações promocionais com a identidade da sua marca.",
-    image:"assets/07-cartao-fidelidade.jpg"
+    {
+  id:"raspadinhas",
+  name:"Raspadinhas promocionais",
+  category:"promocionais",
+  categoryLabel:"Promocionais",
+  desc:"Campanhas de raspe e ganhe para lojas, eventos e ações promocionais com a identidade da sua marca.",
+  image:"assets/08-raspadinha.jpg"
+},
   },
   {
     id:"acabamento-metalizado",
