@@ -123,7 +123,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags personalizadas para biquínis, moda praia e beachwear, com impressão frente e verso e acabamento profissional.",
-  image:"assets/20231005-154740.jpg"
+  image:"20231005-154740.jpg"
 },
 
 {
