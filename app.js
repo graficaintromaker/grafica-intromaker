@@ -71,7 +71,7 @@ const products = [
     category:"divulgacao",
     categoryLabel:"Divulgação",
     desc:"Manuais, orientações, fichas, informativos e materiais impressos para profissionais e empresas.",
-    image:"assets/manual-orientacoes.webp"
+    image:"20251107_143629.jpg"
   },
   {
     id:"fidelidade",
