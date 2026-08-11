@@ -105,7 +105,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags em papel kraft para roupas, presentes, cosméticos e produtos artesanais, com impressão personalizada e opção de furo.",
-  image:"20260717-121649.jpg"
+image:"assets/20260717-121649.jpg"
 },
 
 {
@@ -114,7 +114,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags personalizadas para lingerie com informações de tamanho, modelo, valor, troca e identidade da sua marca.",
-  image:"20231002-141347.jpg"
+ image:"assets/20231002-141347.jpg"
 },
 
 {
@@ -123,7 +123,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags personalizadas para biquínis, moda praia e beachwear, com impressão frente e verso e acabamento profissional.",
-  image:"20231005-154740.jpg"
+ image:"assets/20231005-154740.jpg" 
 },
 
 {
@@ -132,7 +132,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags redondas personalizadas para roupas, presentes, embalagens e produtos, disponíveis em diferentes cores e acabamentos.",
-  image:"20220302-153935.jpg"
+  image:"assets/20220302-153935.jpg"
 },
 
 {
@@ -141,7 +141,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags coloridas para lojas infantis, com espaço para preço, informações de troca e dados da marca.",
-  image:"20220405-160502.jpg"
+  image:"assets/20220405-160502.jpg"
 },
 
 {
@@ -150,7 +150,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags em formato oval para roupas e acessórios, com impressão frente e verso e opção de furo.",
-  image:"20220524-111734.jpg"
+ image:"assets/20220524-111734.jpg"
 },
 
 {
@@ -159,16 +159,16 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags personalizadas para lojas de moda feminina, com campos para tamanho, valor, redes sociais e informações de troca.",
-  image:"20220524-112729.jpg"
+  image:"assets/20220524-112729.jpg"
 },
 
 {
-  id:"tag-premium",
+  id:"tag-premium-roupas",
   name:"Tags premium para roupas",
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags sofisticadas para marcas de moda, com design diferenciado, impressão frente e verso e diversos acabamentos.",
-  image:"20220615-131434.jpg"
+  image:"assets/20220615-131434.jpg"
 },
 
 {
@@ -177,7 +177,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags personalizadas em cores vibrantes para roupas, lojas e confecções, com impressão profissional frente e verso.",
-  image:"20220811-140712.jpg"
+ image:"assets/20220811-140712.jpg"
 },
 
 {
@@ -186,7 +186,7 @@ const products = [
   category:"tags",
   categoryLabel:"Tags",
   desc:"Tags personalizadas com formatos e cortes especiais para valorizar a apresentação e a identidade da sua marca.",
-  image:"20220909-155740.jpg"
+  image:"assets/20220909-155740.jpg"
 }
   };
 
