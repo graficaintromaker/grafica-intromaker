@@ -47,7 +47,7 @@ const products = [
     category:"tags",
     categoryLabel:"Tags",
     desc:"Modelos diferenciados para marcas que buscam uma apresentação mais sofisticada.",
-    image:"assets/tags-premium.webp"
+    image:"assets/04-tags-premium.jpg"
   },
   {
     id:"adesivos",
