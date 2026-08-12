@@ -58,6 +58,222 @@ const products = [
     image:"assets/06-adesivos-metalizados.jpg"
   },
   {
+  id:"adesivo-black-gota-faixa",
+  name:"Adesivo personalizado para embalagens",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo personalizado para identificação e acabamento de embalagens e produtos.",
+  image:"assets/adesivo-black-gota-faixa.jpg"
+},
+{
+  id:"adesivo-black-gota-redondo",
+  name:"Adesivo redondo personalizado",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo redondo personalizado para marcas, embalagens e produtos.",
+  image:"assets/adesivo-black-gota-redondo.jpg"
+},
+{
+  id:"adesivo-branco-retangular",
+  name:"Adesivo branco retangular",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo personalizado em formato retangular para marcas e embalagens.",
+  image:"assets/adesivo-branco-retangular.jpg"
+},
+{
+  id:"adesivo-brinquedos-fechamento-02",
+  name:"Adesivo de fechamento personalizado",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo personalizado para fechamento de embalagens, sacolas e caixas.",
+  image:"assets/adesivo-brinquedos-fechamento-02.jpg"
+},
+{
+  id:"adesivo-brinquedos-fechamento",
+  name:"Adesivo para fechamento de embalagem",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Modelo personalizado para fechamento e identificação de embalagens.",
+  image:"assets/adesivo-brinquedos-fechamento.jpg"
+},
+{
+  id:"adesivo-com-amor",
+  name:"Adesivo Com Amor",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo redondo personalizado para embalagens, presentes e encomendas.",
+  image:"assets/adesivo-com-amor.jpg"
+},
+{
+  id:"adesivo-dourado-aromatizador",
+  name:"Adesivo dourado para aromatizador",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo metalizado dourado personalizado para aromatizadores e produtos.",
+  image:"assets/adesivo-dourado-aromatizador.jpg"
+},
+{
+  id:"adesivo-dourado-folha",
+  name:"Adesivo dourado metalizado",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo dourado metalizado personalizado para embalagens e produtos.",
+  image:"assets/adesivo-dourado-folha.jpg"
+},
+{
+  id:"adesivo-dourado-retangular",
+  name:"Adesivo dourado retangular",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo metalizado dourado em formato retangular com personalização.",
+  image:"assets/adesivo-dourado-retangular.jpg"
+},
+{
+  id:"adesivo-dreams-recorte-especial",
+  name:"Adesivo com recorte especial",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo personalizado com formato especial e acabamento diferenciado.",
+  image:"assets/adesivo-dreams-recorte-especial.jpg"
+},
+{
+  id:"adesivo-dreams-transparente-dourado",
+  name:"Adesivo transparente com dourado",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo transparente personalizado com detalhe dourado.",
+  image:"assets/adesivo-dreams-transparente-dourado.jpg"
+},
+{
+  id:"adesivo-encomenda-chegou",
+  name:"Adesivo Sua Encomenda Chegou",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo personalizado para lojas, encomendas e embalagens.",
+  image:"assets/adesivo-encomenda-chegou.jpg"
+},
+{
+  id:"adesivo-feito-a-mao-com-amor",
+  name:"Adesivo Feito à Mão com Amor",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo personalizado para produtos artesanais, presentes e embalagens.",
+  image:"assets/adesivo-feito-a-mao-com-amor.jpg"
+},
+{
+  id:"adesivo-katia-feitosa",
+  name:"Adesivo personalizado para marca",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo redondo personalizado para identidade visual e embalagens.",
+  image:"assets/adesivo-katia-feitosa.jpg"
+},
+{
+  id:"adesivo-la-linda-redondo",
+  name:"Adesivo redondo para marca",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo redondo personalizado para lojas, roupas e embalagens.",
+  image:"assets/adesivo-la-linda-redondo.jpg"
+},
+{
+  id:"adesivo-laranja-redondo",
+  name:"Adesivo redondo colorido",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo redondo personalizado com impressão colorida.",
+  image:"assets/adesivo-laranja-redondo.jpg"
+},
+{
+  id:"adesivo-lingerie-coral",
+  name:"Adesivo personalizado para lingerie",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo redondo personalizado para lojas de lingerie, moda e embalagens.",
+  image:"assets/adesivo-lingerie-coral.jpg"
+},
+{
+  id:"adesivo-mimo-pra-voce",
+  name:"Adesivo Um Mimo pra Você",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo personalizado para presentes, encomendas e embalagens.",
+  image:"assets/adesivo-mimo-pra-voce.jpg"
+},
+{
+  id:"adesivo-prisma-seguros",
+  name:"Adesivo corporativo personalizado",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo redondo personalizado para empresas e identidade visual.",
+  image:"assets/adesivo-prisma-seguros.jpg"
+},
+{
+  id:"adesivo-rosa-embalagem",
+  name:"Adesivo rosa para embalagem",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo personalizado para embalagens, caixas e produtos.",
+  image:"assets/adesivo-rosa-embalagem.jpg"
+},
+{
+  id:"adesivo-desculpa-encomenda",
+  name:"Adesivo para encomendas",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo personalizado para complementar embalagens e pedidos.",
+  image:"assets/adesivo-desculpa-encomenda.jpg"
+},
+{
+  id:"adesivo-obrigado-rosa",
+  name:"Adesivo de agradecimento",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo rosa personalizado para agradecimento em pedidos e encomendas.",
+  image:"assets/adesivo-obrigado-rosa.jpg"
+},
+{
+  id:"adesivo-transparente-fechamento",
+  name:"Adesivo transparente de fechamento",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo transparente personalizado para fechamento de embalagens.",
+  image:"assets/adesivo-transparente-fechamento.jpg"
+},
+{
+  id:"adesivo-transparente-hidratante",
+  name:"Adesivo transparente para cosméticos",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo transparente personalizado para cosméticos, potes e embalagens.",
+  image:"assets/adesivo-transparente-hidratante.jpg"
+},
+{
+  id:"adesivo-transparente-regiana-matos",
+  name:"Adesivo transparente personalizado",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo transparente para identificação de produtos, embalagens e marcas.",
+  image:"assets/adesivo-transparente-regiana-matos.jpg"
+},
+{
+  id:"adesivo-vermelho-redondo-02",
+  name:"Adesivo redondo personalizado vermelho",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo redondo personalizado para marcas, produtos e embalagens.",
+  image:"assets/adesivo-vermelho-redondo-02.jpg"
+},
+{
+  id:"adesivo-vermelho-redondo",
+  name:"Adesivo redondo para identidade visual",
+  category:"adesivos",
+  categoryLabel:"Adesivos",
+  desc:"Adesivo redondo colorido personalizado com a identidade da sua marca.",
+  image:"assets/adesivo-vermelho-redondo.jpg"
+},
+  {
     id:"panfletos",
     name:"Panfletos e flyers",
     category:"divulgacao",
