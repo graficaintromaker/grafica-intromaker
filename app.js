@@ -89,14 +89,7 @@ const products = [
   desc:"Adesivo personalizado para fechamento de embalagens, sacolas e caixas.",
   image:"assets/adesivo-brinquedos-fechamento-02.jpg"
 },
-{
-  id:"adesivo-brinquedos-fechamento",
-  name:"Adesivo para fechamento de embalagem",
-  category:"adesivos",
-  categoryLabel:"Adesivos",
-  desc:"Modelo personalizado para fechamento e identificação de embalagens.",
-  image:"assets/adesivo-brinquedos-fechamento.jpg"
-},
+
 {
   id:"adesivo-com-amor",
   name:"Adesivo Com Amor",
@@ -281,14 +274,7 @@ const products = [
     desc:"Materiais para promoções, delivery, eventos, serviços, lançamentos e campanhas comerciais.",
     image:"20250912_122212 - Copia.jpg"
   },
-  {
-    id:"informativos",
-    name:"Materiais informativos",
-    category:"divulgacao",
-    categoryLabel:"Divulgação",
-    desc:"Manuais, orientações, fichas, informativos e materiais impressos para profissionais e empresas.",
-    image:"20251107_143629.jpg"
-  },
+ 
   {
     id:"fidelidade",
     name:"Cartões fidelidade",
