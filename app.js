@@ -258,14 +258,7 @@ const products = [
   desc:"Adesivo redondo personalizado para marcas, produtos e embalagens.",
   image:"assets/adesivo-vermelho-redondo-02.jpg"
 },
-{
-  id:"adesivo-vermelho-redondo",
-  name:"Adesivo redondo para identidade visual",
-  category:"adesivos",
-  categoryLabel:"Adesivos",
-  desc:"Adesivo redondo colorido personalizado com a identidade da sua marca.",
-  image:"assets/adesivo-vermelho-redondo.jpg"
-},
+
   {
     id:"panfletos",
     name:"Panfletos e flyers",
