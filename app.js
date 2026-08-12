@@ -255,7 +255,7 @@ const products = [
   category:"adesivos",
   categoryLabel:"Adesivos",
   desc:"Adesivo transparente para identificação de produtos, embalagens e marcas.",
-  image:"assets/adesivo-transparente-regiana-matos.jpg"
+  image:"assets/adesivo-transparente-regiane-matos.jpg"
 },
 {
   id:"adesivo-vermelho-redondo-02",
