@@ -223,7 +223,7 @@ const products = [
   category:"adesivos",
   categoryLabel:"Adesivos",
   desc:"Adesivo personalizado para complementar embalagens e pedidos.",
-  image:"assets/adesivo-desculpa-encomenda.jpg"
+  image:"assets/adesivo-encomenda-chegou.jpg"
 },
 {
   id:"adesivo-obrigado-rosa",
@@ -231,7 +231,7 @@ const products = [
   category:"adesivos",
   categoryLabel:"Adesivos",
   desc:"Adesivo rosa personalizado para agradecimento em pedidos e encomendas.",
-  image:"assets/adesivo-obrigado-rosa.jpg"
+  image:"assets/adesivo-rosa-embalagem.jpg"
 },
 {
   id:"adesivo-transparente-fechamento",
