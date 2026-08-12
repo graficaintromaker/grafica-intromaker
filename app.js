@@ -25,6 +25,326 @@ const products = [
     desc:"Cartões com QR Code para Instagram, catálogo, avaliação, pagamento, cardápio ou página de destino.",
     image:"assets/01-cartoes-qr-code.jpg"
   },
+ {
+    id:"cartao-pricia-dourado",
+    name:"Cartão com acabamento dourado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartões personalizados com acabamento especial dourado para valorizar sua marca.",
+    image:"assets/cartao-pricia-dourado.jpg"
+  },
+  {
+    id:"cartao-aurea-joias-semijoias",
+    name:"Cartão para joias e semijoias",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartões personalizados para joias, semijoias, acessórios e marcas.",
+    image:"assets/cartao-aurea-joias-semijoias.jpg"
+  },
+  {
+    id:"cartao-criando-experiencias-unicas",
+    name:"Cartão personalizado premium",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para marcas, embalagens e experiências de compra.",
+    image:"assets/cartao-criando-experiencias-unicas.jpg"
+  },
+  {
+    id:"cartao-arte-em-pelicula",
+    name:"Cartão de agradecimento personalizado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado de agradecimento para acompanhar pedidos e embalagens.",
+    image:"assets/cartao-arte-em-pelicula.jpg"
+  },
+  {
+    id:"cartao-bikima-agradecimento",
+    name:"Cartão de agradecimento para loja",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão de agradecimento personalizado para fortalecer a experiência da marca.",
+    image:"assets/cartao-bikima-agradecimento.jpg"
+  },
+  {
+    id:"cartao-vizzo-agradecimento",
+    name:"Cartão de agradecimento com acabamento especial",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para pedidos com acabamento diferenciado.",
+    image:"assets/cartao-vizzo-agradecimento.jpg"
+  },
+  {
+    id:"cartao-gamma-garantia-smartwatch",
+    name:"Cartão de garantia e cuidados",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado com informações de garantia, cuidados e orientações ao cliente.",
+    image:"assets/cartao-gamma-garantia-smartwatch.jpg"
+  },
+  {
+    id:"cartao-bruges-semijoias",
+    name:"Cartão de cuidados para semijoias",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado de agradecimento e cuidados para semijoias.",
+    image:"assets/cartao-bruges-semijoias.jpg"
+  },
+  {
+    id:"cartao-gota-de-orvalho-natal",
+    name:"Cartão de Natal personalizado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para ações sazonais, brindes e mensagens de Natal.",
+    image:"assets/cartao-gota-de-orvalho-natal.jpg"
+  },
+  {
+    id:"cartao-natal-laluque",
+    name:"Cartão comemorativo de Natal",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado com mensagem de Natal para clientes e parceiros.",
+    image:"assets/cartao-natal-laluque.jpg"
+  },
+  {
+    id:"cartao-casa-dolphi-agradecimento",
+    name:"Cartão de agradecimento com QR Code",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado de agradecimento com QR Code e informações da marca.",
+    image:"assets/cartao-casa-dolphi-agradecimento.jpg"
+  },
+  {
+    id:"cartao-petit-poa-agradecimento",
+    name:"Cartão para acompanhar pedidos",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para acompanhar encomendas, pedidos e embalagens.",
+    image:"assets/cartao-petit-poa-agradecimento.jpg"
+  },
+  {
+    id:"cartao-bk-emporium",
+    name:"Cartão frente e verso para loja",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado frente e verso para marcas, lojas e agradecimentos.",
+    image:"assets/cartao-bk-emporium.jpg"
+  },
+  {
+    id:"cartao-baldwin-velas",
+    name:"Cartão de cuidados para velas",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado com agradecimento e orientações de uso e cuidados.",
+    image:"assets/cartao-baldwin-velas.jpg"
+  },
+  {
+    id:"cartao-studio-oral-boas-vindas",
+    name:"Cartão de boas-vindas",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado de boas-vindas e orientações para clientes.",
+    image:"assets/cartao-studio-oral-boas-vindas.jpg"
+  },
+  {
+    id:"cartao-melissa-nesti",
+    name:"Cartão minimalista personalizado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado com identidade visual minimalista para marcas e produtos.",
+    image:"assets/cartao-melissa-nesti.jpg"
+  },
+  {
+    id:"cartao-925-prataria",
+    name:"Cartão para joias com cuidados",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado de agradecimento, garantia e cuidados para joias.",
+    image:"assets/cartao-925-prataria.jpg"
+  },
+  {
+    id:"cartao-josi-lima",
+    name:"Cartão motivacional personalizado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para acompanhar pedidos, brindes e ações promocionais.",
+    image:"assets/cartao-josi-lima.jpg"
+  },
+  {
+    id:"cartao-boi-da-cara-preta",
+    name:"Cartão de agradecimento para moda infantil",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para lojas de moda infantil e acompanhamento de pedidos.",
+    image:"assets/cartao-boi-da-cara-preta.jpg"
+  },
+  {
+    id:"cartao-personalizado-20220505",
+    name:"Cartão personalizado para marca",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para agradecimento, cuidados, divulgação e relacionamento com clientes.",
+    image:"assets/cartao-personalizado-20220505.jpg"
+  },
+  {
+    id:"cartao-zaya-cheguei",
+    name:"Cartão de agradecimento Zaya",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para acompanhar pedidos e reforçar a identidade da marca.",
+    image:"assets/cartao-zaya-cheguei.jpg"
+  },
+  {
+    id:"cartao-madu-modas",
+    name:"Cartão de agradecimento para moda",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para lojas de moda, pedidos e embalagens.",
+    image:"assets/cartao-madu-modas.jpg"
+  },
+  {
+    id:"cartao-zaya-agradecimento",
+    name:"Cartão de agradecimento com desconto",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado com agradecimento, redes sociais e incentivo à recompra.",
+    image:"assets/cartao-zaya-agradecimento.jpg"
+  },
+  {
+    id:"cartao-flores-semijoias",
+    name:"Cartão para semijoias",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado com agradecimento e cuidados para semijoias.",
+    image:"assets/cartao-flores-semijoias.jpg"
+  },
+  {
+    id:"cartao-odonto-ig",
+    name:"Cartão institucional personalizado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão institucional para apresentação, boas-vindas e relacionamento com clientes.",
+    image:"assets/cartao-odonto-ig.jpg"
+  },
+  {
+    id:"cartao-stylish-first-boutique",
+    name:"Cartão promocional para boutique",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para ações promocionais, agradecimento e relacionamento com clientes.",
+    image:"assets/cartao-stylish-first-boutique.jpg"
+  },
+  {
+    id:"cartao-patricinha-pet",
+    name:"Cartão de agradecimento para pet shop",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para pet shops, serviços e acompanhamento de pedidos.",
+    image:"assets/cartao-patricinha-pet.jpg"
+  },
+  {
+    id:"cartao-pedra-branca-agradecimento",
+    name:"Cartão de agradecimento para acessórios",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado de agradecimento para lojas de acessórios.",
+    image:"assets/cartao-pedra-branca-agradecimento.jpg"
+  },
+  {
+    id:"cartao-pedra-branca-instrucoes",
+    name:"Cartão de cuidados para acessórios",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado com instruções de conservação e cuidados.",
+    image:"assets/cartao-pedra-branca-instrucoes.jpg"
+  },
+  {
+    id:"cartao-bikina-agradecimento",
+    name:"Cartão de agradecimento para moda praia",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para moda praia, pedidos e relacionamento com clientes.",
+    image:"assets/cartao-bikina-agradecimento.jpg"
+  },
+  {
+    id:"cartao-kairos-pet",
+    name:"Cartão de agradecimento para pet",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para pet shop, acessórios e agradecimento.",
+    image:"assets/cartao-kairos-pet.jpg"
+  },
+  {
+    id:"cartao-good-marias-kraft",
+    name:"Cartão kraft personalizado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado em estilo kraft para agradecimento e identidade da marca.",
+    image:"assets/cartao-good-marias-kraft.jpg"
+  },
+  {
+    id:"cartao-cherie-papillon",
+    name:"Cartão de cuidados para lingerie",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado com agradecimento, cuidados e QR Code.",
+    image:"assets/cartao-cherie-papillon.jpg"
+  },
+  {
+    id:"cartao-farmacia-esperanca-natal",
+    name:"Cartão de Natal com acabamento dourado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão comemorativo personalizado com acabamento dourado para clientes e parceiros.",
+    image:"assets/cartao-farmacia-esperanca-natal.jpg"
+  },
+  {
+    id:"cartao-kefi-glasses",
+    name:"Cartão de agradecimento para loja",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado frente e verso para agradecimento e acompanhamento de pedidos.",
+    image:"assets/cartao-kefi-glasses.jpg"
+  },
+  {
+    id:"cartao-massariol-cosmeticos",
+    name:"Material promocional com cartão e adesivo",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para divulgação de produtos acompanhado de adesivos.",
+    image:"assets/cartao-massariol-cosmeticos.jpg"
+  },
+  {
+    id:"cartao-blink-moda-praia",
+    name:"Cartão de cuidados para moda praia",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado com orientações de lavagem e conservação para moda praia.",
+    image:"assets/cartao-blink-moda-praia.jpg"
+  },
+  {
+    id:"cartao-unita-agradecimento",
+    name:"Cartão de agradecimento feminino",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para acompanhar pedidos e fortalecer a experiência da marca.",
+    image:"assets/cartao-unita-agradecimento.jpg"
+  },
+  {
+    id:"cartao-dani-coelho-semijoias",
+    name:"Cartão de agradecimento para semijoias",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado com agradecimento, garantia e cuidados para semijoias.",
+    image:"assets/cartao-dani-coelho-semijoias.jpg"
+  },
+  {
+    id:"cartao-biquinis-da-na",
+    name:"Cartão de cuidados para biquínis",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado com orientações de uso, lavagem e conservação para moda praia.",
+    image:"assets/cartao-biquinis-da-na.jpg"
+  },
   {
     id:"tag-moda",
     name:"Tags para roupas",
