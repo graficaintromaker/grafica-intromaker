@@ -860,3 +860,59 @@ document.addEventListener("keydown", (e) => {
 document.getElementById("year").textContent = new Date().getFullYear();
 renderProducts();
 updateCart();
+
+// ABRIR FOTO GRANDE AO CLICAR
+document.addEventListener("click", function (event) {
+  const imagem = event.target.closest(".product-grid img, .showcase-photo img");
+  if (!imagem) return;
+
+  let lightbox = document.getElementById("clickZoomLightbox");
+
+  if (!lightbox) {
+    lightbox = document.createElement("div");
+    lightbox.id = "clickZoomLightbox";
+    lightbox.className = "image-lightbox";
+
+    lightbox.innerHTML = `
+      <button class="image-lightbox-close" type="button" aria-label="Fechar">&times;</button>
+      <img alt="">
+    `;
+
+    document.body.appendChild(lightbox);
+  }
+
+  const fotoGrande = lightbox.querySelector("img");
+  fotoGrande.src = imagem.src;
+  fotoGrande.alt = imagem.alt || "Foto do produto";
+
+  lightbox.hidden = false;
+  lightbox.style.display = "flex";
+  document.body.style.overflow = "hidden";
+});
+
+// FECHAR CLICANDO FORA OU NO X
+document.addEventListener("click", function (event) {
+  const lightbox = document.getElementById("clickZoomLightbox");
+  if (!lightbox) return;
+
+  if (
+    event.target === lightbox ||
+    event.target.closest("#clickZoomLightbox .image-lightbox-close")
+  ) {
+    lightbox.hidden = true;
+    lightbox.style.display = "none";
+    document.body.style.overflow = "";
+  }
+});
+
+// FECHAR COM A TECLA ESC
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    const lightbox = document.getElementById("clickZoomLightbox");
+    if (lightbox) {
+      lightbox.hidden = true;
+      lightbox.style.display = "none";
+      document.body.style.overflow = "";
+    }
+  }
+});
