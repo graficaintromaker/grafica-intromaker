@@ -23,5 +23,22 @@ const novos=[
 ["cartao-gleiciane-geroli","Cartão de agradecimento para marca","Cartão personalizado frente e verso para acompanhar pedidos e fortalecer a identidade visual.","assets/cartao-gleiciane-geroli.svg"]
 ];
 novos.forEach(([id,name,desc,image])=>{if(!products.some(p=>p.id===id)){products.push({id,name,category:"cartoes",categoryLabel:"Cartões",desc,image});state.quantities[id]=1;}});
+
+// Mantém juntos e no início os cartões enviados pela cliente.
+const idsEnviados=[
+...novos.map(([id])=>id),
+"cartao-pedra-branca-agradecimento",
+"cartao-pedra-branca-instrucoes",
+"cartao-zaya-cheguei",
+"cartao-zaya-agradecimento",
+"cartao-patricinha-pet",
+"cartao-kairos-pet",
+"cartao-good-marias-kraft",
+"cartao-farmacia-esperanca-natal"
+];
+const cartoesEnviados=idsEnviados.map(id=>products.find(p=>p.id===id)).filter(Boolean);
+const demaisProdutos=products.filter(p=>!idsEnviados.includes(p.id));
+products.splice(0,products.length,...demaisProdutos.slice(0,3),...cartoesEnviados,...demaisProdutos.slice(3));
+
 renderProducts();
 })();
