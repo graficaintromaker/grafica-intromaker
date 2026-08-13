@@ -1,5 +1,14 @@
 (() => {
 const trocas={
+"cartao-arte-em-pelicula":"assets/cartao-atelie-mais.jpg",
+"cartao-vizzo-agradecimento":"assets/cartao-obrigada-metalizado.jpg",
+"cartao-casa-dolphi-agradecimento":"assets/cartao-agropet-sao-lucas.jpg",
+"cartao-boi-da-cara-preta":"assets/cartao-pijamas-fernandes.webp",
+"cartao-madu-modas":"assets/cartao-thais-boutique.jpg",
+"cartao-bikina-agradecimento":"assets/cartao-bikima-agradecimento-novo.jpg",
+"cartao-kefi-glasses":"assets/cartao-de-siena-store.jpg",
+"cartao-unita-agradecimento":"assets/cartao-gleiciane-geroli.jpg",
+"cartao-dani-coelho-semijoias":"assets/cartao-fernanda-marcelino-semijoias.jpg",
 "cartao-bikima-agradecimento":"assets/cartao-bikima-agradecimento-novo.jpg",
 "cartao-pedra-branca-agradecimento":"assets/cartao-pedra-branca-novo.jpg",
 "cartao-pedra-branca-instrucoes":"assets/cartao-pedra-branca-novo.jpg",
