@@ -963,7 +963,7 @@ function renderProducts(){
   const list = state.filter === "todos" ? products : products.filter(p => p.category === state.filter);
   grid.innerHTML = list.map(p => `
     <article class="product-card">
-      <div class="product-visual">
+      <div class="product-visual${p.imageFit === "contain" ? " product-visual-contain" : ""}"${p.imageFit === "contain" ? ` style="--product-image:url(\'${p.image}\')"` : ""}>
         <img src="${p.image}" alt="Exemplo de ${p.name.toLowerCase()} produzido pela Gráfica Intromaker" loading="lazy" />
         <span class="product-photo-label">Foto real</span>
       </div>
