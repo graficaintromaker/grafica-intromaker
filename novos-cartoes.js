@@ -1,6 +1,6 @@
 (() => {
 const trocas={
-"cartao-bikima-agradecimento":"assets/cartao-bikima-agradecimento.jpg",
+"cartao-bikima-agradecimento":"assets/cartao-bikima-agradecimento-novo.jpg",
 "cartao-pedra-branca-agradecimento":"assets/cartao-pedra-branca-novo.jpg",
 "cartao-pedra-branca-instrucoes":"assets/cartao-pedra-branca-novo.jpg",
 "cartao-zaya-cheguei":"assets/cartao-zaya-cheguei-novo.jpg",
