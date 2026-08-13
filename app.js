@@ -346,6 +346,246 @@ const products = [
     image:"assets/cartao-biquinis-da-na.jpg"
   },
   {
+    id:"cartao-modelo-01",
+    name:"Raspadinha promocional personalizada",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão raspadinha personalizado para promoções, descontos, brindes e ações especiais.",
+    image:"assets/cartao-01.jpg"
+  },
+  {
+    id:"cartao-modelo-02",
+    name:"Raspadinha de desconto personalizada",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Raspadinha personalizada para oferecer descontos e incentivar novas compras.",
+    image:"assets/cartao-02.jpg"
+  },
+  {
+    id:"cartao-modelo-03",
+    name:"Cartão de visita com cantos arredondados",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão de visita personalizado com formato compacto e cantos arredondados.",
+    image:"assets/cartao-03.jpg"
+  },
+  {
+    id:"cartao-modelo-04",
+    name:"Certificado de garantia personalizado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para informações de garantia, conservação e atendimento ao cliente.",
+    image:"assets/cartao-04.jpg"
+  },
+  {
+    id:"cartao-modelo-05",
+    name:"Raspadinha promocional colorida",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão raspadinha colorido para campanhas, brindes e promoções da sua marca.",
+    image:"assets/cartao-05.jpg"
+  },
+  {
+    id:"cartao-modelo-06",
+    name:"Raspadinha de presente personalizada",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão raspadinha personalizado para presentear clientes com prêmios e descontos.",
+    image:"assets/cartao-06.jpg"
+  },
+  {
+    id:"cartao-modelo-07",
+    name:"Cartão de visita elegante",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão de visita personalizado com visual delicado e apresentação profissional.",
+    image:"assets/cartao-07.jpg"
+  },
+  {
+    id:"cartao-modelo-08",
+    name:"Cartão fidelidade rosa",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão fidelidade personalizado para recompensar clientes e estimular novas compras.",
+    image:"assets/cartao-08.jpg"
+  },
+  {
+    id:"cartao-modelo-09",
+    name:"Cartão fidelidade premium",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão fidelidade personalizado com acabamento sofisticado para sua marca.",
+    image:"assets/cartao-09.jpg"
+  },
+  {
+    id:"cartao-modelo-10",
+    name:"Cartão com cupom de desconto",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão promocional personalizado com cupom para atrair e fidelizar clientes.",
+    image:"assets/cartao-10.jpg"
+  },
+  {
+    id:"cartao-modelo-11",
+    name:"Cartão fidelidade preto",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão fidelidade personalizado em estilo moderno para lojas e serviços.",
+    image:"assets/cartao-11.jpg"
+  },
+  {
+    id:"cartao-modelo-12",
+    name:"Cartão fidelidade para salão",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão fidelidade personalizado para salões, beleza e atendimento recorrente.",
+    image:"assets/cartao-12.jpg"
+  },
+  {
+    id:"cartao-modelo-13",
+    name:"Cartão fidelidade para estética",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão fidelidade personalizado para serviços de estética, beleza e bem-estar.",
+    image:"assets/cartao-13.jpg"
+  },
+  {
+    id:"cartao-modelo-14",
+    name:"Cartão de visita para advocacia",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão de visita profissional para escritórios, advocacia e serviços jurídicos.",
+    image:"assets/cartao-14.jpg"
+  },
+  {
+    id:"cartao-modelo-15",
+    name:"Raspadinha promocional feminina",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão raspadinha personalizado para lojas, campanhas e ações promocionais.",
+    image:"assets/cartao-15.jpg"
+  },
+  {
+    id:"cartao-modelo-16",
+    name:"Cartão profissional minimalista",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão de visita personalizado com visual limpo e informações profissionais.",
+    image:"assets/cartao-16.jpg"
+  },
+  {
+    id:"cartao-modelo-17",
+    name:"Cartão de visita preto com dourado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão de visita personalizado com combinação preta e dourada para um visual sofisticado.",
+    image:"assets/cartao-17.jpg"
+  },
+  {
+    id:"cartao-modelo-18",
+    name:"Cartão fidelidade para delivery",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão fidelidade personalizado para delivery, lanchonetes e estabelecimentos comerciais.",
+    image:"assets/cartao-18.jpg"
+  },
+  {
+    id:"cartao-modelo-19",
+    name:"Cartão kraft personalizado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão em estilo kraft para marcas artesanais, lojas, presentes e embalagens.",
+    image:"assets/cartao-19.jpg"
+  },
+  {
+    id:"cartao-modelo-20",
+    name:"Cartão premium preto personalizado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado em estilo premium para valorizar a identidade e a apresentação da marca.",
+    image:"assets/cartao-20.jpg"
+  },
+  {
+    id:"cartao-modelo-21",
+    name:"Raspadinha promocional com QR Code",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Raspadinha personalizada com QR Code para promoções, campanhas e relacionamento com clientes.",
+    image:"assets/cartao-21.jpg"
+  },
+  {
+    id:"cartao-modelo-22",
+    name:"Cartão de visita com acabamento metalizado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão de visita personalizado com detalhes metalizados e acabamento sofisticado.",
+    image:"assets/cartao-22.jpg"
+  },
+  {
+    id:"cartao-modelo-23",
+    name:"Cartão de visita para serviços",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão profissional personalizado para apresentar serviços, contatos e redes sociais.",
+    image:"assets/cartao-23.jpg"
+  },
+  {
+    id:"cartao-modelo-24",
+    name:"Cartão de visita para delivery",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão de visita personalizado para delivery, alimentação e atendimento comercial.",
+    image:"assets/cartao-24.jpg"
+  },
+  {
+    id:"cartao-modelo-25",
+    name:"Cartão de visita com moldura dourada",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão de visita personalizado com detalhes dourados e apresentação elegante.",
+    image:"assets/cartao-25.jpg"
+  },
+  {
+    id:"cartao-modelo-26",
+    name:"Cartão de visita rosa minimalista",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão de visita personalizado em tons suaves com estilo moderno e delicado.",
+    image:"assets/cartao-26.jpg"
+  },
+  {
+    id:"cartao-modelo-27",
+    name:"Cartão de visita profissional clean",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão de visita personalizado com visual clean para profissionais e empresas.",
+    image:"assets/cartao-27.jpg"
+  },
+  {
+    id:"cartao-modelo-28",
+    name:"Cartão de visita institucional",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão personalizado para empresas, serviços profissionais e apresentação institucional.",
+    image:"assets/cartao-28.jpg"
+  },
+  {
+    id:"cartao-modelo-29",
+    name:"Cartão de visita feminino com QR Code",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão de visita personalizado em estilo delicado com QR Code e informações de contato.",
+    image:"assets/cartao-29.jpg"
+  },
+  {
+    id:"cartao-modelo-30",
+    name:"Cartão de visita branco e dourado",
+    category:"cartoes",
+    categoryLabel:"Cartões",
+    desc:"Cartão de visita personalizado com visual branco e dourado para uma apresentação elegante.",
+    image:"assets/cartao-30.jpg"
+  },
+  {
     id:"tag-moda",
     name:"Tags para roupas",
     category:"tags",
