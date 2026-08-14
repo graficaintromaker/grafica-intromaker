@@ -28,6 +28,320 @@ const novos=[
 ];
 novos.forEach(([id,name,desc,image])=>{const existente=products.find(p=>p.id===id);if(existente){Object.assign(existente,{name,desc,image,imageFit:"contain"});}else{products.push({id,name,category:"cartoes",categoryLabel:"Cartões",desc,image,imageFit:"contain"});state.quantities[id]=1;}});
 
+const fotosNovas=[
+  {
+    "id": "cartao-fidelidade-agradecimento-vip",
+    "name": "Cartão fidelidade com agradecimento",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão fidelidade apresentado em material de agradecimento para valorizar clientes e incentivar novas compras.",
+    "image": "assets/cartao-fidelidade-agradecimento-vip.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "tag-brincos-corte-especial",
+    "name": "Tag para brincos com corte especial",
+    "category": "tags",
+    "categoryLabel": "Tags",
+    "desc": "Tag personalizada para brincos e pequenos acessórios com formato especial e acabamento sofisticado.",
+    "image": "assets/tag-brincos-corte-especial.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartao-agradecimento-qr-metalizado",
+    "name": "Cartão de agradecimento com QR Code e acabamento metalizado",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão personalizado com QR Code e detalhe metalizado para acompanhar pedidos e divulgar a marca.",
+    "image": "assets/cartao-agradecimento-qr-metalizado.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "tag-semijoias-metalizada",
+    "name": "Tag para semijoias com acabamento metalizado",
+    "category": "tags",
+    "categoryLabel": "Tags",
+    "desc": "Tag personalizada frente e verso para semijoias com acabamento metalizado e espaço para informações.",
+    "image": "assets/tag-semijoias-metalizada.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartao-garantia-semijoias-novo",
+    "name": "Cartão de garantia para semijoias",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão personalizado com informações de garantia, manutenção, conservação e QR Code.",
+    "image": "assets/cartao-garantia-semijoias-novo.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "tag-roupas-troca",
+    "name": "Tag para roupas com informações de troca",
+    "category": "tags",
+    "categoryLabel": "Tags",
+    "desc": "Tag personalizada frente e verso para roupas, com tamanhos e orientações de troca.",
+    "image": "assets/tag-roupas-troca.webp",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartao-agradecimento-acessorios-novo",
+    "name": "Cartão de agradecimento para acessórios",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão de agradecimento personalizado para lojas de acessórios, pedidos e embalagens.",
+    "image": "assets/cartao-agradecimento-acessorios-novo.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "kit-cartoes-adesivos-personalizados",
+    "name": "Kit de cartões e adesivos personalizados",
+    "category": "promocionais",
+    "categoryLabel": "Promocionais",
+    "desc": "Conjunto personalizado com cartões de agradecimento, QR Code e adesivos para embalagens.",
+    "image": "assets/kit-cartoes-adesivos-personalizados.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "tag-semijoias-acabamento-especial",
+    "name": "Tag para semijoias com acabamento especial",
+    "category": "tags",
+    "categoryLabel": "Tags",
+    "desc": "Tag personalizada para semijoias com corte especial e acabamento metalizado.",
+    "image": "assets/tag-semijoias-acabamento-especial.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartao-natal-dourado-novo",
+    "name": "Cartão de Natal com acabamento dourado",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão comemorativo de Natal personalizado com acabamento dourado e visual sofisticado.",
+    "image": "assets/cartao-natal-dourado-novo.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartao-agradecimento-dourado-novo",
+    "name": "Cartão de agradecimento com acabamento dourado",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão de agradecimento frente e verso com corte especial e detalhes dourados.",
+    "image": "assets/cartao-agradecimento-dourado-novo.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "tag-maternidade-corte-especial",
+    "name": "Tag temática para maternidade",
+    "category": "tags",
+    "categoryLabel": "Tags",
+    "desc": "Tag personalizada para produtos de maternidade com aplique e corte especial.",
+    "image": "assets/tag-maternidade-corte-especial.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "caixinha-acessorios-personalizada",
+    "name": "Caixinha personalizada para acessórios",
+    "category": "promocionais",
+    "categoryLabel": "Embalagens",
+    "desc": "Caixinha personalizada com alça para acessórios, brindes e pequenos produtos.",
+    "image": "assets/caixinha-acessorios-personalizada.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "caixinha-semijoias-personalizada",
+    "name": "Caixinha personalizada para semijoias",
+    "category": "promocionais",
+    "categoryLabel": "Embalagens",
+    "desc": "Caixinha personalizada para semijoias e pequenos acessórios com acabamento de marca.",
+    "image": "assets/caixinha-semijoias-personalizada.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartao-garantia-cuidados-semijoias",
+    "name": "Cartão de garantia e cuidados para semijoias",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão personalizado com certificado de garantia, orientações de uso e conservação.",
+    "image": "assets/cartao-garantia-cuidados-semijoias.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "tag-natal-corte-especial",
+    "name": "Tag de Natal com corte especial",
+    "category": "tags",
+    "categoryLabel": "Tags",
+    "desc": "Tag temática de Natal com formato especial e acabamento metalizado.",
+    "image": "assets/tag-natal-corte-especial.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cupom-promocional-desconto",
+    "name": "Cupom promocional com desconto",
+    "category": "promocionais",
+    "categoryLabel": "Promocionais",
+    "desc": "Cupom personalizado com corte especial para descontos, brindes e ações promocionais.",
+    "image": "assets/cupom-promocional-desconto.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartao-agradecimento-delivery-qr",
+    "name": "Cartão de agradecimento para delivery com QR Code",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão de agradecimento frente e verso com QR Code para pedidos, delivery e contato da marca.",
+    "image": "assets/cartao-agradecimento-delivery-qr.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartao-cuidados-roupas",
+    "name": "Cartão de cuidados para roupas",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão informativo frente e verso com orientações de lavagem e conservação de roupas.",
+    "image": "assets/cartao-cuidados-roupas.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "receituario-farmaceutico-personalizado",
+    "name": "Receituário farmacêutico personalizado",
+    "category": "divulgacao",
+    "categoryLabel": "Papelaria",
+    "desc": "Bloco de receituário profissional personalizado para consultórios e atendimentos farmacêuticos.",
+    "image": "assets/receituario-farmaceutico-personalizado.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "folder-catalogo-produtos",
+    "name": "Folder para catálogo de produtos",
+    "category": "divulgacao",
+    "categoryLabel": "Divulgação",
+    "desc": "Folder personalizado para apresentar produtos, benefícios, informações e canais de contato.",
+    "image": "assets/folder-catalogo-produtos.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartao-lancamento-acabamento-especial",
+    "name": "Cartão de lançamento com acabamento especial",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão promocional personalizado para lançamentos, campanhas e divulgação de produtos.",
+    "image": "assets/cartao-lancamento-acabamento-especial.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "kit-papelaria-personalizada-loja",
+    "name": "Kit de papelaria personalizada para loja",
+    "category": "promocionais",
+    "categoryLabel": "Promocionais",
+    "desc": "Kit coordenado com papel de seda, cartões, tags e faixas para embalagens.",
+    "image": "assets/kit-papelaria-personalizada-loja.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "folder-dobravel-personalizado",
+    "name": "Folder dobrável personalizado",
+    "category": "divulgacao",
+    "categoryLabel": "Divulgação",
+    "desc": "Folder compacto dobrável com identidade visual e informações institucionais da marca.",
+    "image": "assets/folder-dobravel-personalizado.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartao-dobravel-agradecimento-cuidados",
+    "name": "Cartão dobrável de agradecimento e cuidados",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão dobrável com agradecimento, QR Code e orientações de conservação dos produtos.",
+    "image": "assets/cartao-dobravel-agradecimento-cuidados.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartao-dobravel-garantia-semijoias",
+    "name": "Cartão dobrável de garantia para semijoias",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão dobrável com garantia, limpeza, cuidados e informações para troca de semijoias.",
+    "image": "assets/cartao-dobravel-garantia-semijoias.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartao-informativo-produtos-beleza",
+    "name": "Cartão informativo para produtos de beleza",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão frente e verso com agradecimento, modo de uso, benefícios e contato da marca.",
+    "image": "assets/cartao-informativo-produtos-beleza.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartela-brincos-metalizada",
+    "name": "Cartela para brincos com acabamento metalizado",
+    "category": "tags",
+    "categoryLabel": "Tags",
+    "desc": "Cartela personalizada para brincos com acabamento metalizado e identidade visual.",
+    "image": "assets/cartela-brincos-metalizada.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "sacola-personalizada-semijoias",
+    "name": "Sacola personalizada para semijoias",
+    "category": "promocionais",
+    "categoryLabel": "Embalagens",
+    "desc": "Sacola personalizada com alça para lojas de semijoias, acessórios e presentes.",
+    "image": "assets/sacola-personalizada-semijoias.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "adesivo-sorria-encomenda",
+    "name": "Adesivo para encomendas",
+    "category": "adesivos",
+    "categoryLabel": "Adesivos",
+    "desc": "Adesivo personalizado para identificar pedidos, brindes e embalagens.",
+    "image": "assets/adesivo-sorria-encomenda.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "tag-semijoias-corte-especial",
+    "name": "Tag para semijoias com corte especial",
+    "category": "tags",
+    "categoryLabel": "Tags",
+    "desc": "Tag personalizada para brincos e semijoias com recortes e formato diferenciado.",
+    "image": "assets/tag-semijoias-corte-especial.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "kit-embalagem-cartao-agradecimento",
+    "name": "Kit de embalagem e cartão de agradecimento",
+    "category": "promocionais",
+    "categoryLabel": "Embalagens",
+    "desc": "Conjunto personalizado com embalagem e cartão de agradecimento para acompanhar pedidos.",
+    "image": "assets/kit-embalagem-cartao-agradecimento.jpg",
+    "imageFit": "contain"
+  },
+  {
+    "id": "cartao-dobravel-garantia-acessorios",
+    "name": "Cartão dobrável de garantia para acessórios",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão dobrável com garantia, recomendações de uso e campos para referência e data.",
+    "image": "assets/cartao-dobravel-garantia-acessorios.jpg",
+    "imageFit": "contain"
+  }
+];
+fotosNovas.forEach(item=>{
+  const existente=products.find(p=>p.id===item.id);
+  if(existente) Object.assign(existente,item);
+  else {
+    products.push(item);
+    state.quantities[item.id]=1;
+  }
+});
+
+// As fotos já cadastradas são mantidas uma única vez e exibidas sem corte.
+["tag-infantil","tag-oval","tag-colorida","tag-lingerie-personalizada"].forEach(id=>{
+  const p=products.find(item=>item.id===id);
+  if(p) p.imageFit="contain";
+});
+
 // Remove somente o cadastro que repetia a mesma foto de acessórios.
 const idsDuplicadosRemovidos=["cartao-pedra-branca-instrucoes"];
 idsDuplicadosRemovidos.forEach(id=>{
@@ -37,6 +351,7 @@ idsDuplicadosRemovidos.forEach(id=>{
 
 // Mantém juntos e no início os cartões enviados pela cliente.
 const idsEnviados=[
+...fotosNovas.map(item=>item.id),
 ...novos.map(([id])=>id),
 "cartao-pedra-branca-agradecimento",
 "cartao-zaya-cheguei",
