@@ -939,6 +939,10 @@ image:"20220405-160502.jpg"
 
 const state = {
   filter: "todos",
+  search: "",
+  visibleCount: 12,
+  pageSize: 12,
+  selectedProductId: null,
   quantities: Object.fromEntries(products.map(p => [p.id, 1])),
   cart: []
 };
@@ -950,15 +954,61 @@ const cartItems = document.getElementById("cartItems");
 const cartCount = document.getElementById("cartCount");
 const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.getElementById("lightboxImage");
+const productSearch = document.getElementById("productSearch");
+const clearProductSearch = document.getElementById("clearProductSearch");
+const productCount = document.getElementById("productCount");
+const showMoreProducts = document.getElementById("showMoreProducts");
+const catalogMore = showMoreProducts.closest(".catalog-more");
+const productDetailsModal = document.getElementById("productDetailsModal");
+const productDetailsImage = document.getElementById("productDetailsImage");
+const productDetailsCategory = document.getElementById("productDetailsCategory");
+const productDetailsTitle = document.getElementById("productDetailsTitle");
+const productDetailsDescription = document.getElementById("productDetailsDescription");
+const productDetailsQty = document.getElementById("productDetailsQty");
+
+function normalizeText(value){
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+}
+
+function getFilteredProducts(){
+  const term = normalizeText(state.search);
+  return products.filter(product => {
+    const matchesCategory = state.filter === "todos" || product.category === state.filter;
+    const searchableText = normalizeText(`${product.name} ${product.desc} ${product.categoryLabel}`);
+    return matchesCategory && (!term || searchableText.includes(term));
+  });
+}
 
 function renderProducts(){
-  const list = state.filter === "todos" ? products : products.filter(p => p.category === state.filter);
+  const filteredProducts = getFilteredProducts();
+  const list = filteredProducts.slice(0, state.visibleCount);
+
+  productCount.textContent = filteredProducts.length === 1
+    ? "1 produto encontrado"
+    : `${filteredProducts.length} produtos encontrados`;
+  clearProductSearch.hidden = !state.search;
+  catalogMore.hidden = filteredProducts.length <= state.visibleCount;
+
+  if(!filteredProducts.length){
+    grid.innerHTML = `
+      <div class="catalog-empty">
+        <h3>Nenhum produto encontrado</h3>
+        <p>Tente outro nome ou veja novamente todas as categorias.</p>
+        <button type="button" onclick="resetProductCatalog()">Ver todos os produtos</button>
+      </div>`;
+    return;
+  }
+
   grid.innerHTML = list.map(p => `
     <article class="product-card">
-      <div class="product-visual${p.imageFit === "contain" ? " product-visual-contain" : ""}"${p.imageFit === "contain" ? ` style="--product-image:url(\'${p.image}\')"` : ""}>
+      <button class="product-visual${p.imageFit === "contain" ? " product-visual-contain" : ""}"${p.imageFit === "contain" ? ` style="--product-image:url(\'${p.image}\')"` : ""} type="button" onclick="openProductDetails('${p.id}')" aria-label="Ver detalhes de ${p.name}">
         <img src="${p.image}" alt="Exemplo de ${p.name.toLowerCase()} produzido pela Gráfica Intromaker" loading="lazy" />
         <span class="product-photo-label">Foto real</span>
-      </div>
+      </button>
       <div class="product-body">
         <span class="category">${p.categoryLabel}</span>
         <h3>${p.name}</h3>
@@ -971,15 +1021,56 @@ function renderProducts(){
             <button type="button" aria-label="Aumentar" onclick="changeQty('${p.id}',1)">+</button>
           </div>
         </div>
-        <button class="add-button" type="button" onclick="addToCart('${p.id}')">Adicionar ao pedido</button>
+        <div class="product-actions">
+          <button class="details-button" type="button" onclick="openProductDetails('${p.id}')">Ver detalhes</button>
+          <button class="add-button" type="button" onclick="addToCart('${p.id}')">Adicionar ao pedido</button>
+        </div>
       </div>
     </article>`).join("");
 }
 
 window.changeQty = (id, delta) => {
-  state.quantities[id] = Math.max(1, state.quantities[id] + delta);
+  state.quantities[id] = Math.max(1, (state.quantities[id] || 1) + delta);
   const el = document.getElementById(`qty-${id}`);
   if(el) el.textContent = state.quantities[id];
+  if(state.selectedProductId === id) productDetailsQty.textContent = state.quantities[id];
+};
+
+window.openProductDetails = (id) => {
+  const product = products.find(item => item.id === id);
+  if(!product) return;
+
+  state.selectedProductId = id;
+  productDetailsImage.src = product.image;
+  productDetailsImage.alt = `Exemplo de ${product.name.toLowerCase()} produzido pela Gráfica Intromaker`;
+  productDetailsCategory.textContent = product.categoryLabel;
+  productDetailsTitle.textContent = product.name;
+  productDetailsDescription.textContent = product.desc;
+  productDetailsQty.textContent = state.quantities[id] || 1;
+  productDetailsModal.hidden = false;
+  productDetailsModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("no-scroll");
+  document.getElementById("closeProductDetails").focus();
+};
+
+function closeProductDetails(){
+  productDetailsModal.hidden = true;
+  productDetailsModal.setAttribute("aria-hidden", "true");
+  productDetailsImage.src = "";
+  state.selectedProductId = null;
+  document.body.classList.remove("no-scroll");
+}
+
+window.resetProductCatalog = () => {
+  state.search = "";
+  state.filter = "todos";
+  state.visibleCount = state.pageSize;
+  productSearch.value = "";
+  document.querySelectorAll(".filter").forEach(button => {
+    button.classList.toggle("active", button.dataset.filter === "todos");
+  });
+  renderProducts();
+  productSearch.focus();
 };
 
 window.addToCart = (id) => {
@@ -1038,8 +1129,57 @@ document.querySelectorAll(".filter").forEach(btn => {
     document.querySelectorAll(".filter").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
     state.filter = btn.dataset.filter;
+    state.visibleCount = state.pageSize;
     renderProducts();
   });
+});
+
+productSearch.addEventListener("input", () => {
+  state.search = productSearch.value;
+  state.visibleCount = state.pageSize;
+  renderProducts();
+});
+
+clearProductSearch.addEventListener("click", () => {
+  state.search = "";
+  state.visibleCount = state.pageSize;
+  productSearch.value = "";
+  renderProducts();
+  productSearch.focus();
+});
+
+showMoreProducts.addEventListener("click", () => {
+  state.visibleCount += state.pageSize;
+  renderProducts();
+});
+
+document.getElementById("closeProductDetails").addEventListener("click", closeProductDetails);
+productDetailsModal.querySelector("[data-close-product-modal]").addEventListener("click", closeProductDetails);
+document.getElementById("detailQtyMinus").addEventListener("click", () => {
+  if(state.selectedProductId) changeQty(state.selectedProductId, -1);
+});
+document.getElementById("detailQtyPlus").addEventListener("click", () => {
+  if(state.selectedProductId) changeQty(state.selectedProductId, 1);
+});
+document.getElementById("addProductFromDetails").addEventListener("click", () => {
+  const productId = state.selectedProductId;
+  if(!productId) return;
+  closeProductDetails();
+  addToCart(productId);
+});
+document.getElementById("quoteProductWhatsapp").addEventListener("click", () => {
+  const product = products.find(item => item.id === state.selectedProductId);
+  if(!product) return;
+  const quantity = state.quantities[product.id] || 1;
+  const message = [
+    "Olá! Gostaria de solicitar um orçamento pela loja da Gráfica Intromaker.",
+    "",
+    `Produto: ${product.name}`,
+    `Quantidade selecionada: ${quantity}`,
+    "",
+    "Pode me informar valor e opções de acabamento?"
+  ].join("\n");
+  window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(message)}`, "_blank");
 });
 
 document.getElementById("checkoutWhatsapp").addEventListener("click",() => {
@@ -1084,7 +1224,8 @@ lightbox.addEventListener("click", (e) => {
 
 document.addEventListener("keydown", (e) => {
   if(e.key === "Escape"){
-    if(!lightbox.hidden) closeLightbox();
+    if(!productDetailsModal.hidden) closeProductDetails();
+    else if(!lightbox.hidden) closeLightbox();
     else closeCart();
   }
 });
@@ -1095,7 +1236,7 @@ updateCart();
 
 // ABRIR FOTO GRANDE AO CLICAR
 document.addEventListener("click", function (event) {
-  const imagem = event.target.closest(".product-grid img, .showcase-photo img");
+  const imagem = event.target.closest(".showcase-photo img");
   if (!imagem) return;
 
   let lightbox = document.getElementById("clickZoomLightbox");
