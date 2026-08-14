@@ -2,7 +2,6 @@
 const trocas={
 "cartao-bikima-agradecimento":"assets/cartao-bikima-agradecimento-novo.jpg",
 "cartao-pedra-branca-agradecimento":"assets/cartao-pedra-branca-novo.jpg",
-"cartao-pedra-branca-instrucoes":"assets/cartao-pedra-branca-novo.jpg",
 "cartao-zaya-cheguei":"assets/cartao-zaya-cheguei-novo.jpg",
 "cartao-zaya-agradecimento":"assets/cartao-zaya-agradecimento-novo.jpg",
 "cartao-patricinha-pet":"assets/cartao-patricinha-pet-novo.jpg",
@@ -10,7 +9,8 @@ const trocas={
 "cartao-good-marias-kraft":"assets/cartao-good-marias-kraft-novo.jpg",
 "cartao-farmacia-esperanca-natal":"assets/cartao-farmacia-esperanca-natal-novo.jpg"};
 const nomesAtualizados={
-"cartao-zaya-cheguei":"Cartão de agradecimento para loja de roupas"
+"cartao-zaya-cheguei":"Cartão de agradecimento para loja de roupas",
+"cartao-pedra-branca-agradecimento":"Cartão de agradecimento e cuidados para acessórios"
 };
 Object.entries(trocas).forEach(([id,image])=>{const p=products.find(x=>x.id===id);if(p){p.image=image;p.imageFit="contain";if(nomesAtualizados[id])p.name=nomesAtualizados[id];}});
 const novos=[
@@ -29,7 +29,7 @@ const novos=[
 novos.forEach(([id,name,desc,image])=>{const existente=products.find(p=>p.id===id);if(existente){Object.assign(existente,{name,desc,image,imageFit:"contain"});}else{products.push({id,name,category:"cartoes",categoryLabel:"Cartões",desc,image,imageFit:"contain"});state.quantities[id]=1;}});
 
 // Remove itens antigos cujas fotos foram substituídas por novos cartões equivalentes.
-const idsDuplicadosRemovidos=["cartao-arte-em-pelicula","cartao-vizzo-agradecimento","cartao-casa-dolphi-agradecimento","cartao-boi-da-cara-preta","cartao-madu-modas","cartao-bikina-agradecimento","cartao-kefi-glasses","cartao-unita-agradecimento","cartao-dani-coelho-semijoias"];
+const idsDuplicadosRemovidos=["cartao-arte-em-pelicula","cartao-vizzo-agradecimento","cartao-casa-dolphi-agradecimento","cartao-boi-da-cara-preta","cartao-madu-modas","cartao-bikina-agradecimento","cartao-kefi-glasses","cartao-unita-agradecimento","cartao-dani-coelho-semijoias","cartao-pedra-branca-instrucoes"];
 idsDuplicadosRemovidos.forEach(id=>{
   const i=products.findIndex(p=>p.id===id);
   if(i>=0) products.splice(i,1);
@@ -39,7 +39,6 @@ idsDuplicadosRemovidos.forEach(id=>{
 const idsEnviados=[
 ...novos.map(([id])=>id),
 "cartao-pedra-branca-agradecimento",
-"cartao-pedra-branca-instrucoes",
 "cartao-zaya-cheguei",
 "cartao-zaya-agradecimento",
 "cartao-patricinha-pet",
