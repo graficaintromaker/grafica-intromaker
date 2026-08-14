@@ -14,6 +14,24 @@ const nomesAtualizados={
 "cartao-pedra-branca-agradecimento":"Cartão de agradecimento e cuidados para acessórios"
 };
 Object.entries(trocas).forEach(([id,image])=>{const p=products.find(x=>x.id===id);if(p){p.image=image;p.imageFit="contain";if(nomesAtualizados[id])p.name=nomesAtualizados[id];}});
+const ajustesIniciais={
+"cartao-pricia-dourado":{
+  name:"Cartão para joias e semijoias",
+  desc:"Cartão personalizado para joias, semijoias e acessórios com acabamento dourado."
+},
+"cartao-aurea-joias-semijoias":{
+  name:"Cartão para joias e semijoias em hot stamping",
+  desc:"Cartão personalizado para joias e semijoias com aplicação de hot stamping."
+},
+"cartao-criando-experiencias-unicas":{
+  name:"Cartão personalizado premium com verniz localizado",
+  desc:"Cartão personalizado premium com aplicação de verniz localizado para valorizar a apresentação da marca."
+}
+};
+Object.entries(ajustesIniciais).forEach(([id,ajustes])=>{
+  const p=products.find(item=>item.id===id);
+  if(p) Object.assign(p,ajustes);
+});
 const novos=[
 ["cartao-thais-boutique","Cartão de agradecimento com cupom de desconto","Cartão personalizado de agradecimento com cupom para incentivar a próxima compra.","assets/cartao-thais-boutique.jpg"],
 ["cartao-com-afeto-lingerie","Cartão promocional para lingerie","Cartão personalizado com vales promocionais para ações de relacionamento e fidelização.","assets/cartao-com-afeto-lingerie.jpg"],
