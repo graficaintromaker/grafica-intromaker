@@ -974,10 +974,34 @@ function normalizeText(value){
     .trim();
 }
 
+function matchesProductCategory(product, filter){
+  if(filter === "todos") return true;
+
+  const text = normalizeText(`${product.id} ${product.name} ${product.desc} ${product.categoryLabel}`);
+
+  if(filter === "agradecimento"){
+    return product.category !== "adesivos" && /agradecimento|obrigad[ao]/.test(text);
+  }
+
+  if(filter === "garantia"){
+    return product.category !== "adesivos" && /garantia|certificado/.test(text);
+  }
+
+  if(filter === "tags-semijoias"){
+    return product.category === "tags" && /semijoia|joia|brinco|acessorio/.test(text);
+  }
+
+  if(filter === "tags-roupas"){
+    return product.category === "tags" && /roupa|moda|lingerie|biquini|praia|infantil/.test(text);
+  }
+
+  return product.category === filter;
+}
+
 function getFilteredProducts(){
   const term = normalizeText(state.search);
   return products.filter(product => {
-    const matchesCategory = state.filter === "todos" || product.category === state.filter;
+    const matchesCategory = matchesProductCategory(product, state.filter);
     const searchableText = normalizeText(`${product.name} ${product.desc} ${product.categoryLabel}`);
     return matchesCategory && (!term || searchableText.includes(term));
   });
