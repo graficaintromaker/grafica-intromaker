@@ -49,28 +49,28 @@ const fotosNovas=[
   },
   {
     "id": "cartao-agradecimento-qr-metalizado",
-    "name": "Cartão de agradecimento com QR Code e acabamento metalizado",
+    "name": "Cartão de agradecimento com QR Code e acabamento em verniz localizado",
     "category": "cartoes",
     "categoryLabel": "Cartões",
-    "desc": "Cartão personalizado com QR Code e detalhe metalizado para acompanhar pedidos e divulgar a marca.",
+    "desc": "Cartão personalizado com QR Code e aplicação de verniz localizado para acompanhar pedidos e divulgar a marca.",
     "image": "assets/cartao-agradecimento-qr-metalizado.jpg",
     "imageFit": "contain"
   },
   {
     "id": "tag-semijoias-metalizada",
-    "name": "Tag para semijoias com acabamento metalizado",
+    "name": "Tag para semijoias com acabamento fosco com verniz localizado",
     "category": "tags",
     "categoryLabel": "Tags",
-    "desc": "Tag personalizada frente e verso para semijoias com acabamento metalizado e espaço para informações.",
+    "desc": "Tag personalizada frente e verso para semijoias com acabamento fosco e aplicação de verniz localizado.",
     "image": "assets/tag-semijoias-metalizada.jpg",
     "imageFit": "contain"
   },
   {
     "id": "cartao-garantia-semijoias-novo",
-    "name": "Cartão de garantia para semijoias",
+    "name": "Cartão de garantia fosco com verniz localizado",
     "category": "cartoes",
     "categoryLabel": "Cartões",
-    "desc": "Cartão personalizado com informações de garantia, manutenção, conservação e QR Code.",
+    "desc": "Cartão de garantia com acabamento fosco, verniz localizado, informações de conservação e QR Code.",
     "image": "assets/cartao-garantia-semijoias-novo.jpg",
     "imageFit": "contain"
   },
@@ -112,19 +112,19 @@ const fotosNovas=[
   },
   {
     "id": "cartao-natal-dourado-novo",
-    "name": "Cartão de Natal com acabamento dourado",
+    "name": "Cartão de Natal com acabamento hot stamping dourado",
     "category": "cartoes",
     "categoryLabel": "Cartões",
-    "desc": "Cartão comemorativo de Natal personalizado com acabamento dourado e visual sofisticado.",
+    "desc": "Cartão comemorativo de Natal com aplicação de hot stamping dourado e visual sofisticado.",
     "image": "assets/cartao-natal-dourado-novo.jpg",
     "imageFit": "contain"
   },
   {
     "id": "cartao-agradecimento-dourado-novo",
-    "name": "Cartão de agradecimento com acabamento dourado",
+    "name": "Cartão de agradecimento com acabamento hot stamping dourado",
     "category": "cartoes",
     "categoryLabel": "Cartões",
-    "desc": "Cartão de agradecimento frente e verso com corte especial e detalhes dourados.",
+    "desc": "Cartão de agradecimento frente e verso com corte especial e aplicação de hot stamping dourado.",
     "image": "assets/cartao-agradecimento-dourado-novo.jpg",
     "imageFit": "contain"
   },
@@ -193,10 +193,10 @@ const fotosNovas=[
   },
   {
     "id": "cartao-cuidados-roupas",
-    "name": "Cartão de cuidados para roupas",
-    "category": "cartoes",
-    "categoryLabel": "Cartões",
-    "desc": "Cartão informativo frente e verso com orientações de lavagem e conservação de roupas.",
+    "name": "Panfleto de cuidados para roupas",
+    "category": "divulgacao",
+    "categoryLabel": "Divulgação",
+    "desc": "Panfleto informativo frente e verso com orientações de lavagem e conservação de roupas.",
     "image": "assets/cartao-cuidados-roupas.jpg",
     "imageFit": "contain"
   },
@@ -220,37 +220,37 @@ const fotosNovas=[
   },
   {
     "id": "cartao-lancamento-acabamento-especial",
-    "name": "Cartão de lançamento com acabamento especial",
+    "name": "Cartão fosco com verniz localizado",
     "category": "cartoes",
     "categoryLabel": "Cartões",
-    "desc": "Cartão promocional personalizado para lançamentos, campanhas e divulgação de produtos.",
+    "desc": "Cartão personalizado com acabamento fosco e aplicação de verniz localizado.",
     "image": "assets/cartao-lancamento-acabamento-especial.jpg",
     "imageFit": "contain"
   },
   {
     "id": "kit-papelaria-personalizada-loja",
-    "name": "Kit de papelaria personalizada para loja",
+    "name": "Kit de papelaria personalizada para laçeiras",
     "category": "promocionais",
     "categoryLabel": "Promocionais",
-    "desc": "Kit coordenado com papel de seda, cartões, tags e faixas para embalagens.",
+    "desc": "Kit coordenado com papel de seda, cartões, tags e cartelas personalizados para laçeiras.",
     "image": "assets/kit-papelaria-personalizada-loja.jpg",
     "imageFit": "contain"
   },
   {
     "id": "folder-dobravel-personalizado",
-    "name": "Folder dobrável personalizado",
-    "category": "divulgacao",
-    "categoryLabel": "Divulgação",
-    "desc": "Folder compacto dobrável com identidade visual e informações institucionais da marca.",
+    "name": "Cartão dobrável personalizado",
+    "category": "cartoes",
+    "categoryLabel": "Cartões",
+    "desc": "Cartão compacto dobrável com identidade visual e informações institucionais da marca.",
     "image": "assets/folder-dobravel-personalizado.jpg",
     "imageFit": "contain"
   },
   {
     "id": "cartao-dobravel-agradecimento-cuidados",
-    "name": "Cartão dobrável de agradecimento e cuidados",
-    "category": "cartoes",
-    "categoryLabel": "Cartões",
-    "desc": "Cartão dobrável com agradecimento, QR Code e orientações de conservação dos produtos.",
+    "name": "Folder dobrável de agradecimento e cuidados",
+    "category": "divulgacao",
+    "categoryLabel": "Divulgação",
+    "desc": "Folder dobrável com agradecimento, QR Code e orientações de conservação dos produtos.",
     "image": "assets/cartao-dobravel-agradecimento-cuidados.jpg",
     "imageFit": "contain"
   },
@@ -265,19 +265,19 @@ const fotosNovas=[
   },
   {
     "id": "cartao-informativo-produtos-beleza",
-    "name": "Cartão informativo para produtos de beleza",
+    "name": "Cartão com corte especial",
     "category": "cartoes",
     "categoryLabel": "Cartões",
-    "desc": "Cartão frente e verso com agradecimento, modo de uso, benefícios e contato da marca.",
+    "desc": "Cartão personalizado com corte especial para apresentar informações, pedidos e produtos da marca.",
     "image": "assets/cartao-informativo-produtos-beleza.jpg",
     "imageFit": "contain"
   },
   {
     "id": "cartela-brincos-metalizada",
-    "name": "Cartela para brincos com acabamento metalizado",
+    "name": "Cartela para brincos com acabamento fosco com verniz localizado",
     "category": "tags",
     "categoryLabel": "Tags",
-    "desc": "Cartela personalizada para brincos com acabamento metalizado e identidade visual.",
+    "desc": "Cartela para brincos com acabamento fosco e aplicação de verniz localizado.",
     "image": "assets/cartela-brincos-metalizada.jpg",
     "imageFit": "contain"
   },
