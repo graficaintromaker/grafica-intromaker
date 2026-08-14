@@ -981,7 +981,7 @@ function matchesProductCategory(product, filter){
   const titleText = normalizeText(`${product.id} ${product.name}`);
 
   if(filter === "agradecimento"){
-    return product.category !== "adesivos" && /agradecimento|obrigad[ao]/.test(text);
+    return product.category === "cartoes" && /agradecimento|obrigad[ao]/.test(titleText);
   }
 
   if(filter === "garantia"){
