@@ -10,6 +10,7 @@ const trocas={
 "cartao-farmacia-esperanca-natal":"assets/cartao-farmacia-esperanca-natal-novo.jpg"};
 const nomesAtualizados={
 "cartao-zaya-cheguei":"Cartão de agradecimento para loja de roupas",
+"cartao-farmacia-esperanca-natal":"Cartão de Natal com acabamento hot stamping dourado",
 "cartao-pedra-branca-agradecimento":"Cartão de agradecimento e cuidados para acessórios"
 };
 Object.entries(trocas).forEach(([id,image])=>{const p=products.find(x=>x.id===id);if(p){p.image=image;p.imageFit="contain";if(nomesAtualizados[id])p.name=nomesAtualizados[id];}});
