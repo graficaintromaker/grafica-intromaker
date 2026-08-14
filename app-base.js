@@ -155,26 +155,26 @@ const products = [
   },
   {
     id:"cartao-925-prataria",
-    name:"Cartão para joias com cuidados",
+    name:"Cartão de agradecimento",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão personalizado de agradecimento, garantia e cuidados para joias.",
+    desc:"Cartão de agradecimento personalizado para acompanhar pedidos de joias e semijoias.",
     image:"assets/cartao-925-prataria.jpg"
   },
   {
     id:"cartao-josi-lima",
-    name:"Cartão motivacional personalizado",
+    name:"Cartão de agradecimento e cuidados",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão personalizado para acompanhar pedidos, brindes e ações promocionais.",
+    desc:"Cartão personalizado com agradecimento e orientações de cuidados para acompanhar pedidos.",
     image:"assets/cartao-josi-lima.jpg"
   },
   {
     id:"cartao-boi-da-cara-preta",
-    name:"Cartão de agradecimento para moda infantil",
+    name:"Cartão motivacional",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão personalizado para lojas de moda infantil e acompanhamento de pedidos.",
+    desc:"Cartão motivacional personalizado para acompanhar pedidos e valorizar a experiência do cliente.",
     image:"assets/cartao-boi-da-cara-preta.jpg"
   },
   {

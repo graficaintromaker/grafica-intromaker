@@ -1,9 +1,9 @@
 (() => {
   const base=document.createElement("script");
-  base.src="app-base.js?v=7ce2883e";
+  base.src="app-base.js?v=20260813-3";
   base.onload=()=>{
     const extras=document.createElement("script");
-    extras.src="novos-cartoes.js?v=7ce2883e";
+    extras.src="novos-cartoes.js?v=20260813-3";
     document.body.appendChild(extras);
   };
   document.body.appendChild(base);
