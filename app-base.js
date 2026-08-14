@@ -107,10 +107,10 @@ const products = [
   },
   {
     id:"cartao-casa-dolphi-agradecimento",
-    name:"Cartão de agradecimento com QR Code",
+    name:"Cartão de agradecimento",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão personalizado de agradecimento com QR Code e informações da marca.",
+    desc:"Cartão personalizado de agradecimento para acompanhar pedidos e fortalecer a marca.",
     image:"assets/cartao-casa-dolphi-agradecimento.jpg"
   },
   {
@@ -131,10 +131,10 @@ const products = [
   },
   {
     id:"cartao-baldwin-velas",
-    name:"Cartão de cuidados para velas",
+    name:"Cartão de agradecimento para loja de roupas",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão personalizado com agradecimento e orientações de uso e cuidados.",
+    desc:"Cartão de agradecimento personalizado para lojas de roupas, pedidos e embalagens.",
     image:"assets/cartao-baldwin-velas.jpg"
   },
   {
@@ -411,10 +411,10 @@ const products = [
   },
   {
     id:"cartao-modelo-09",
-    name:"Cartão fidelidade premium",
+    name:"Raspadinha personalizada",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão fidelidade personalizado com acabamento sofisticado para sua marca.",
+    desc:"Raspadinha promocional personalizada para campanhas, brindes e ações com clientes.",
     image:"assets/cartao-09.jpg"
   },
   {
@@ -427,26 +427,26 @@ const products = [
   },
   {
     id:"cartao-modelo-11",
-    name:"Cartão fidelidade preto",
+    name:"Cartão de visita",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão fidelidade personalizado em estilo moderno para lojas e serviços.",
+    desc:"Cartão de visita personalizado para apresentar marca, contatos e redes sociais.",
     image:"assets/cartao-11.jpg"
   },
   {
     id:"cartao-modelo-12",
-    name:"Cartão fidelidade para salão",
+    name:"Cartão de visita para confeitaria",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão fidelidade personalizado para salões, beleza e atendimento recorrente.",
+    desc:"Cartão de visita personalizado para confeitaria, doces e atendimento sob encomenda.",
     image:"assets/cartao-12.jpg"
   },
   {
     id:"cartao-modelo-13",
-    name:"Cartão fidelidade para estética",
+    name:"Cartão de visita para semijoias",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão fidelidade personalizado para serviços de estética, beleza e bem-estar.",
+    desc:"Cartão de visita personalizado para marcas de semijoias e acessórios.",
     image:"assets/cartao-13.jpg"
   },
   {
@@ -483,10 +483,10 @@ const products = [
   },
   {
     id:"cartao-modelo-18",
-    name:"Cartão fidelidade para delivery",
+    name:"Raspadinha personalizada",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão fidelidade personalizado para delivery, lanchonetes e estabelecimentos comerciais.",
+    desc:"Raspadinha promocional personalizada para campanhas e ações com clientes.",
     image:"assets/cartao-18.jpg"
   },
   {
@@ -499,18 +499,18 @@ const products = [
   },
   {
     id:"cartao-modelo-20",
-    name:"Cartão premium preto personalizado",
+    name:"Cartão fidelidade",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão personalizado em estilo premium para valorizar a identidade e a apresentação da marca.",
+    desc:"Cartão fidelidade personalizado para estimular novas compras e recorrência.",
     image:"assets/cartao-20.jpg"
   },
   {
     id:"cartao-modelo-21",
-    name:"Raspadinha promocional com QR Code",
+    name:"Raspadinha personalizada",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Raspadinha personalizada com QR Code para promoções, campanhas e relacionamento com clientes.",
+    desc:"Raspadinha promocional personalizada para campanhas, brindes e descontos.",
     image:"assets/cartao-21.jpg"
   },
   {
@@ -523,18 +523,18 @@ const products = [
   },
   {
     id:"cartao-modelo-23",
-    name:"Cartão de visita para serviços",
+    name:"Cartão de garantia",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão profissional personalizado para apresentar serviços, contatos e redes sociais.",
+    desc:"Cartão de garantia personalizado com informações de cuidados e atendimento.",
     image:"assets/cartao-23.jpg"
   },
   {
     id:"cartao-modelo-24",
-    name:"Cartão de visita para delivery",
+    name:"Cartão de visita para academia",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão de visita personalizado para delivery, alimentação e atendimento comercial.",
+    desc:"Cartão de visita personalizado para academia, treinamento e serviços fitness.",
     image:"assets/cartao-24.jpg"
   },
   {
@@ -568,14 +568,6 @@ const products = [
     categoryLabel:"Cartões",
     desc:"Cartão personalizado para empresas, serviços profissionais e apresentação institucional.",
     image:"assets/cartao-28.jpg"
-  },
-  {
-    id:"cartao-modelo-29",
-    name:"Cartão de visita feminino com QR Code",
-    category:"cartoes",
-    categoryLabel:"Cartões",
-    desc:"Cartão de visita personalizado em estilo delicado com QR Code e informações de contato.",
-    image:"assets/cartao-29.jpg"
   },
   {
     id:"cartao-modelo-30",

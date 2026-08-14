@@ -1,14 +1,5 @@
 (() => {
 const trocas={
-"cartao-arte-em-pelicula":"assets/cartao-atelie-mais.jpg",
-"cartao-vizzo-agradecimento":"assets/cartao-obrigada-metalizado.jpg",
-"cartao-casa-dolphi-agradecimento":"assets/cartao-agropet-sao-lucas.jpg",
-"cartao-boi-da-cara-preta":"assets/cartao-pijamas-fernandes.webp",
-"cartao-madu-modas":"assets/cartao-thais-boutique.jpg",
-"cartao-bikina-agradecimento":"assets/cartao-bikima-agradecimento-novo.jpg",
-"cartao-kefi-glasses":"assets/cartao-de-siena-store.jpg",
-"cartao-unita-agradecimento":"assets/cartao-gleiciane-geroli.jpg",
-"cartao-dani-coelho-semijoias":"assets/cartao-fernanda-marcelino-semijoias.jpg",
 "cartao-bikima-agradecimento":"assets/cartao-bikima-agradecimento-novo.jpg",
 "cartao-pedra-branca-agradecimento":"assets/cartao-pedra-branca-novo.jpg",
 "cartao-pedra-branca-instrucoes":"assets/cartao-pedra-branca-novo.jpg",
@@ -36,6 +27,13 @@ const novos=[
 ["cartao-gleiciane-geroli","Cartão de agradecimento para marca","Cartão personalizado frente e verso para acompanhar pedidos e fortalecer a identidade visual.","assets/cartao-gleiciane-geroli.jpg"]
 ];
 novos.forEach(([id,name,desc,image])=>{const existente=products.find(p=>p.id===id);if(existente){Object.assign(existente,{name,desc,image,imageFit:"contain"});}else{products.push({id,name,category:"cartoes",categoryLabel:"Cartões",desc,image,imageFit:"contain"});state.quantities[id]=1;}});
+
+// Remove itens antigos cujas fotos foram substituídas por novos cartões equivalentes.
+const idsDuplicadosRemovidos=["cartao-arte-em-pelicula","cartao-vizzo-agradecimento","cartao-casa-dolphi-agradecimento","cartao-boi-da-cara-preta","cartao-madu-modas","cartao-bikina-agradecimento","cartao-kefi-glasses","cartao-unita-agradecimento","cartao-dani-coelho-semijoias"];
+idsDuplicadosRemovidos.forEach(id=>{
+  const i=products.findIndex(p=>p.id===id);
+  if(i>=0) products.splice(i,1);
+});
 
 // Mantém juntos e no início os cartões enviados pela cliente.
 const idsEnviados=[
