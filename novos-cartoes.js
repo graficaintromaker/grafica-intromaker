@@ -185,10 +185,10 @@ const fotosNovas=[
   },
   {
     "id": "cartao-agradecimento-delivery-qr",
-    "name": "Cartão de agradecimento para delivery com QR Code",
-    "category": "cartoes",
-    "categoryLabel": "Cartões",
-    "desc": "Cartão de agradecimento frente e verso com QR Code para pedidos, delivery e contato da marca.",
+    "name": "Panfleto de agradecimento para delivery com QR Code",
+    "category": "divulgacao",
+    "categoryLabel": "Divulgação",
+    "desc": "Panfleto personalizado com agradecimento e QR Code para pedidos, delivery e contato da marca.",
     "image": "assets/cartao-agradecimento-delivery-qr.jpg",
     "imageFit": "contain"
   },
