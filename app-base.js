@@ -893,10 +893,10 @@ image:"20220405-160502.jpg"
 
 {
   id:"tag-oval",
-  name:"Tags ovais personalizadas",
+  name:"Tag redonda para roupas",
   category:"tags",
   categoryLabel:"Tags",
-  desc:"Tags em formato oval para roupas e acessórios, com impressão frente e verso e opção de furo.",
+  desc:"Tag redonda personalizada para roupas, com impressão frente e verso, informações de troca e opção de furo.",
  image:"20220524-111734.jpg"
 },
 
