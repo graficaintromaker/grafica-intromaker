@@ -355,6 +355,116 @@ fotosNovas.forEach(item=>{
   }
 });
 
+const novasTags=[
+  {
+    id:"tag-joias-corte-especial-preta",
+    name:"Tag para joias com corte especial",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Tag personalizada para joias e semijoias, com espaço para brincos, colares e informações de conservação.",
+    image:"assets/tag-joias-corte-especial-preta.jpg",
+    imageFit:"contain"
+  },
+  {
+    id:"tag-semijoias-infantis-dupla",
+    name:"Tag para semijoias infantis",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Tag personalizada frente e verso para brincos e semijoias infantis.",
+    image:"assets/tag-semijoias-infantis-dupla.jpg",
+    imageFit:"contain"
+  },
+  {
+    id:"tag-colorida-semijoias",
+    name:"Tag colorida para semijoias",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Tag colorida personalizada para brincos, pequenos acessórios e semijoias.",
+    image:"assets/tag-colorida-semijoias.jpg",
+    imageFit:"contain"
+  },
+  {
+    id:"tag-semijoias-acabamento-dourado",
+    name:"Tag para semijoias com acabamento dourado",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Tag personalizada para semijoias com impressão frente e verso e acabamento dourado.",
+    image:"assets/tag-semijoias-acabamento-dourado.jpg",
+    imageFit:"contain"
+  },
+  {
+    id:"tag-semijoias-acessorios-branca",
+    name:"Tag para semijoias e acessórios",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Tag personalizada frente e verso para brincos, colares, acessórios e semijoias.",
+    image:"assets/tag-semijoias-acessorios-branca.jpg",
+    imageFit:"contain"
+  },
+  {
+    id:"tag-outubro-rosa-semijoias",
+    name:"Tag Outubro Rosa para semijoias",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Tag temática personalizada para semijoias, acessórios e campanhas do Outubro Rosa.",
+    image:"assets/tag-outubro-rosa-semijoias.jpg",
+    imageFit:"contain"
+  },
+  {
+    id:"tag-coracao-roupas-lingerie",
+    name:"Tag coração para roupas e lingerie",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Tag de roupa em formato de coração, com campos para tamanho, preço e informações da loja.",
+    image:"assets/tag-coracao-roupas-lingerie.jpg",
+    imageFit:"contain"
+  },
+  {
+    id:"tag-semijoias-metalizada-rosa",
+    name:"Tag para semijoias com acabamento metalizado",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Tag personalizada para semijoias com formato diferenciado e acabamento metalizado.",
+    image:"assets/tag-semijoias-metalizada-rosa.jpg",
+    imageFit:"contain"
+  },
+  {
+    id:"tag-horizontal-semijoias",
+    name:"Tag horizontal para semijoias",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Tag horizontal personalizada frente e verso para semijoias, com espaço para conservação e contatos.",
+    image:"assets/tag-horizontal-semijoias.jpg",
+    imageFit:"contain"
+  },
+  {
+    id:"tag-infantil-semijoias-arcoiris",
+    name:"Tag infantil para semijoias",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Tag infantil personalizada para brincos e semijoias, com impressão frente e verso.",
+    image:"assets/tag-infantil-semijoias-arcoiris.jpg",
+    imageFit:"contain"
+  },
+  {
+    id:"tag-semijoias-luana-corte-especial",
+    name:"Tag para semijoias com corte especial",
+    category:"tags",
+    categoryLabel:"Tags",
+    desc:"Tag personalizada para semijoias com corte especial, espaço para brincos, preço e contatos.",
+    image:"assets/tag-semijoias-luana-corte-especial.jpg",
+    imageFit:"contain"
+  }
+];
+novasTags.forEach(item=>{
+  const existente=products.find(p=>p.id===item.id);
+  if(existente) Object.assign(existente,item);
+  else {
+    products.push(item);
+    state.quantities[item.id]=1;
+  }
+});
+
 // As fotos já cadastradas são mantidas uma única vez e exibidas sem corte.
 ["tag-infantil","tag-oval","tag-colorida","tag-lingerie-personalizada"].forEach(id=>{
   const p=products.find(item=>item.id===id);
@@ -371,6 +481,7 @@ idsDuplicadosRemovidos.forEach(id=>{
 // Mantém juntos e no início os cartões enviados pela cliente.
 const idsEnviados=[
 ...fotosNovas.map(item=>item.id),
+...novasTags.map(item=>item.id),
 ...novos.map(([id])=>id),
 "cartao-pedra-branca-agradecimento",
 "cartao-zaya-cheguei",
