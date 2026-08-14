@@ -978,13 +978,14 @@ function matchesProductCategory(product, filter){
   if(filter === "todos") return true;
 
   const text = normalizeText(`${product.id} ${product.name} ${product.desc} ${product.categoryLabel}`);
+  const titleText = normalizeText(`${product.id} ${product.name}`);
 
   if(filter === "agradecimento"){
     return product.category !== "adesivos" && /agradecimento|obrigad[ao]/.test(text);
   }
 
   if(filter === "garantia"){
-    return product.category !== "adesivos" && /garantia|certificado/.test(text);
+    return product.category !== "adesivos" && /garantia|certificado/.test(titleText);
   }
 
   if(filter === "tags-semijoias"){
