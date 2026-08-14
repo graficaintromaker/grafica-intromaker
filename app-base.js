@@ -989,7 +989,7 @@ function matchesProductCategory(product, filter){
   }
 
   if(filter === "tags-semijoias"){
-    return product.category === "tags" && /semijoia|joia|brinco|acessorio/.test(text);
+    return product.category === "tags" && /semijoia|joia|brinco/.test(titleText);
   }
 
   if(filter === "tags-roupas"){
