@@ -107,10 +107,10 @@ const products = [
   },
   {
     id:"cartao-casa-dolphi-agradecimento",
-    name:"Cartão de agradecimento",
+    name:"Cartão de agradecimento com QR Code",
     category:"cartoes",
     categoryLabel:"Cartões",
-    desc:"Cartão personalizado de agradecimento para acompanhar pedidos e fortalecer a marca.",
+    desc:"Cartão personalizado de agradecimento com QR Code e informações da marca.",
     image:"assets/cartao-casa-dolphi-agradecimento.jpg"
   },
   {

@@ -28,8 +28,8 @@ const novos=[
 ];
 novos.forEach(([id,name,desc,image])=>{const existente=products.find(p=>p.id===id);if(existente){Object.assign(existente,{name,desc,image,imageFit:"contain"});}else{products.push({id,name,category:"cartoes",categoryLabel:"Cartões",desc,image,imageFit:"contain"});state.quantities[id]=1;}});
 
-// Remove itens antigos cujas fotos foram substituídas por novos cartões equivalentes.
-const idsDuplicadosRemovidos=["cartao-arte-em-pelicula","cartao-vizzo-agradecimento","cartao-casa-dolphi-agradecimento","cartao-boi-da-cara-preta","cartao-madu-modas","cartao-bikina-agradecimento","cartao-kefi-glasses","cartao-unita-agradecimento","cartao-dani-coelho-semijoias","cartao-pedra-branca-instrucoes"];
+// Remove somente o cadastro que repetia a mesma foto de acessórios.
+const idsDuplicadosRemovidos=["cartao-pedra-branca-instrucoes"];
 idsDuplicadosRemovidos.forEach(id=>{
   const i=products.findIndex(p=>p.id===id);
   if(i>=0) products.splice(i,1);
