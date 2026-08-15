@@ -59,7 +59,7 @@ const fotosNovas=[
   },
   {
     "id": "tag-brincos-corte-especial",
-    "name": "Tag para brincos com corte especial",
+    "name": "Tag semicircular para brincos",
     "category": "tags",
     "categoryLabel": "Tags",
     "desc": "Tag personalizada para brincos e pequenos acessórios com formato especial e acabamento sofisticado.",
@@ -122,7 +122,7 @@ const fotosNovas=[
   },
   {
     "id": "tag-semijoias-acabamento-especial",
-    "name": "Tag para semijoias com acabamento especial",
+    "name": "Tag semicircular para semijoias com acabamento em verniz localizado",
     "category": "tags",
     "categoryLabel": "Tags",
     "desc": "Tag personalizada para semijoias com corte especial e acabamento metalizado.",
