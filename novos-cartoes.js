@@ -439,7 +439,7 @@ const novasTags=[
   },
   {
     id:"tag-infantil-semijoias-arcoiris",
-    name:"Tag infantil para semijoias",
+    name:"Tag conjunto infantil para semijoia",
     category:"tags",
     categoryLabel:"Tags",
     desc:"Tag infantil personalizada para brincos e semijoias, com impressão frente e verso.",
@@ -448,7 +448,7 @@ const novasTags=[
   },
   {
     id:"tag-semijoias-luana-corte-especial",
-    name:"Tag para semijoias com corte especial",
+    name:"Tag trio de brincos para semijoias",
     category:"tags",
     categoryLabel:"Tags",
     desc:"Tag personalizada para semijoias com corte especial, espaço para brincos, preço e contatos.",
