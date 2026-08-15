@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://grafica-intromaker.vercel.app/sitemap.xml
+Sitemap: https://graficaintromaker.com.br/sitemap.xml
