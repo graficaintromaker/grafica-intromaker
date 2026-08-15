@@ -993,7 +993,7 @@ function matchesProductCategory(product, filter){
   }
 
   if(filter === "tags-roupas"){
-    return product.category === "tags" && /roupa|moda|lingerie|biquini|praia|infantil/.test(text);
+    return product.category === "tags" && !/semijoia|joia|brinco/.test(titleText) && /roupa|moda|lingerie|biquini|praia|infantil/.test(text);
   }
 
   return product.category === filter;
