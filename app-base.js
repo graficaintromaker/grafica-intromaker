@@ -587,7 +587,7 @@ const products = [
   },
   {
     id:"tag-semijoias",
-    name:"Tags para semijoias",
+    name:"Tags par de brincos para semijoias",
     category:"tags",
     categoryLabel:"Tags",
     desc:"Modelos para brincos, colares, pulseiras e pequenos acessórios, com formatos e acabamentos personalizados.",
