@@ -1,10 +1,14 @@
 (() => {
   const base=document.createElement("script");
-    base.src="app-base.js?v=20260814-15";
+  base.src="app-base.js?v=20260814-15";
   base.onload=()=>{
     const extras=document.createElement("script");
-      extras.src="novos-cartoes.js?v=20260814-15";
+    extras.src="novos-cartoes.js?v=20260814-15";
     document.body.appendChild(extras);
+
+    const videos=document.createElement("script");
+    videos.src="videos.js?v=20260815-1";
+    document.body.appendChild(videos);
   };
   document.body.appendChild(base);
 })();
