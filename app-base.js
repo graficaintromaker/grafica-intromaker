@@ -771,14 +771,6 @@ const products = [
   image:"assets/adesivo-encomenda-chegou.jpg"
 },
 {
-  id:"adesivo-obrigado-rosa",
-  name:"Adesivo de agradecimento",
-  category:"adesivos",
-  categoryLabel:"Adesivos",
-  desc:"Adesivo rosa personalizado para agradecimento em pedidos e encomendas.",
-  image:"assets/adesivo-rosa-embalagem.jpg"
-},
-{
   id:"adesivo-transparente-fechamento",
   name:"Adesivo transparente de fechamento",
   category:"adesivos",
