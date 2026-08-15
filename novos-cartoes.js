@@ -77,7 +77,7 @@ const fotosNovas=[
   },
   {
     "id": "tag-semijoias-metalizada",
-    "name": "Tag para semijoias com acabamento fosco com verniz localizado",
+    "name": "Tag para roupa com acabamento fosco com verniz localizado",
     "category": "tags",
     "categoryLabel": "Tags",
     "desc": "Tag personalizada frente e verso para semijoias com acabamento fosco e aplicação de verniz localizado.",
