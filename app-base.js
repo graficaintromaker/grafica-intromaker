@@ -748,7 +748,7 @@ const products = [
 },
 {
   id:"adesivo-prisma-seguros",
-  name:"Adesivo corporativo personalizado",
+  name:"Adesivo de vinil corporativo personalizado",
   category:"adesivos",
   categoryLabel:"Adesivos",
   desc:"Adesivo redondo personalizado para empresas e identidade visual.",
