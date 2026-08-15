@@ -376,7 +376,7 @@ const novasTags=[
   },
   {
     id:"tag-colorida-semijoias",
-    name:"Tag colorida para semijoias",
+    name:"Tag brinco mimo para cliente",
     category:"tags",
     categoryLabel:"Tags",
     desc:"Tag colorida personalizada para brincos, pequenos acessórios e semijoias.",
