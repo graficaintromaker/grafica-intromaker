@@ -9,6 +9,10 @@
     const videos=document.createElement("script");
     videos.src="videos.js?v=20260815-2";
     document.body.appendChild(videos);
+
+    const seo=document.createElement("script");
+    seo.src="seo.js?v=20260815-1";
+    document.body.appendChild(seo);
   };
   document.body.appendChild(base);
 })();
