@@ -603,7 +603,7 @@ const products = [
   },
   {
     id:"adesivos",
-    name:"Adesivos personalizados",
+    name:"Adesivos em hot stamping dourado personalizados",
     category:"adesivos",
     categoryLabel:"Adesivos",
     desc:"Adesivos em diferentes formatos, tamanhos e materiais para embalagens, produtos, eventos e marcas.",
