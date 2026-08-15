@@ -1,5 +1,5 @@
 (() => {
-  const SITE = "https://grafica-intromaker.vercel.app/";
+  const SITE = "https://graficaintromaker.com.br/";
   const WA = "https://wa.me/553173581976?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
 
   document.title = "Gráfica em Ipatinga/MG | Cartões, Tags e Adesivos | Intromaker";
