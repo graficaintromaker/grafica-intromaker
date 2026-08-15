@@ -66,7 +66,7 @@
 
       <div class="video-showcase-grid">
         <article class="video-showcase-card">
-          <video controls playsinline preload="auto" aria-label="Vídeo de materiais produzidos pela Gráfica Intromaker">
+          <video controls playsinline preload="metadata" poster="assets/06-adesivos-metalizados.jpg" aria-label="Vídeo de materiais produzidos pela Gráfica Intromaker">
             <source src="video-materiais-intromaker(1).mp4" type="video/mp4" />
             Seu navegador não suporta vídeo em MP4.
           </video>
@@ -77,7 +77,7 @@
         </article>
 
         <article class="video-showcase-card video-vertical">
-          <video controls playsinline preload="auto" aria-label="Vídeo de cartão de agradecimento produzido pela Gráfica Intromaker">
+          <video controls playsinline preload="metadata" poster="20220928_122913.jpg" aria-label="Vídeo de cartão de agradecimento produzido pela Gráfica Intromaker">
             <source src="video_intromaker_compativel(1).mp4" type="video/mp4" />
             Seu navegador não suporta vídeo em MP4.
           </video>
