@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "grafica-intromaker.vercel.app"
+        }
+      ],
+      "destination": "https://graficaintromaker.com.br/:path*",
+      "permanent": true
+    }
+  ]
+}
