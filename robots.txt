@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://grafica-intromaker.vercel.app/sitemap.xml
