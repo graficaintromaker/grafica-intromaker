@@ -421,7 +421,7 @@ const novasTags=[
   },
   {
     id:"tag-semijoias-metalizada-rosa",
-    name:"Tag para semijoias com acabamento metalizado",
+    name:"Tag gravatinha para semijoias com acabamento metalizado",
     category:"tags",
     categoryLabel:"Tags",
     desc:"Tag personalizada para semijoias com formato diferenciado e acabamento metalizado.",
@@ -430,7 +430,7 @@ const novasTags=[
   },
   {
     id:"tag-horizontal-semijoias",
-    name:"Tag horizontal para semijoias",
+    name:"Tag argolinhas para semijoias",
     category:"tags",
     categoryLabel:"Tags",
     desc:"Tag horizontal personalizada frente e verso para semijoias, com espaço para conservação e contatos.",
