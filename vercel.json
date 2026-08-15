@@ -10,7 +10,7 @@
         }
       ],
       "destination": "https://graficaintromaker.com.br/:path*",
-      "permanent": true
+      "statusCode": 301
     }
   ]
 }
