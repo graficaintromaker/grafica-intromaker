@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "grafica-intromaker.vercel.app"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "https://graficaintromaker.com.br/$1"
+      }
+    },
+    {
+      "handle": "filesystem"
+    }
+  ]
+}
