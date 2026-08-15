@@ -7,7 +7,7 @@
     document.body.appendChild(extras);
 
     const videos=document.createElement("script");
-    videos.src="videos.js?v=20260815-1";
+    videos.src="videos.js?v=20260815-2";
     document.body.appendChild(videos);
   };
   document.body.appendChild(base);
