@@ -293,7 +293,7 @@ const fotosNovas=[
   },
   {
     "id": "cartela-brincos-metalizada",
-    "name": "Cartela para brincos com acabamento fosco com verniz localizado",
+    "name": "Tag conjunto para brincos e colar com acabamento fosco com verniz localizado",
     "category": "tags",
     "categoryLabel": "Tags",
     "desc": "Cartela para brincos com acabamento fosco e aplicação de verniz localizado.",
