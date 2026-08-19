@@ -1,8 +1,8 @@
 (() => {
   const SITE = "https://graficaintromaker.com.br/";
-  const WA = "https://wa.me/553173581976?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
+  const WA = "https://wa.me/5531973581976?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
 
-  document.title = "Gráfica em Ipatinga/MG | Cartões, Tags e Adesivos | Intromaker";
+  document.title = "Gráfica Intro Maker | Gráfica em Ipatinga/MG | Cartões, Tags e Adesivos";
 
   const ensureMeta = (name, content, property = false) => {
     const selector = property ? `meta[property="${name}"]` : `meta[name="${name}"]`;
@@ -44,13 +44,13 @@
       "url": SITE,
       "logo": SITE + "assets/06-adesivos-metalizados.jpg",
       "email": "graficaintromaker@gmail.com",
-      "telephone": "+553173581976",
+      "telephone": "+5531973581976",
       "identifier": "CNPJ 38.283.331/0001-59",
       "areaServed": {"@type":"City","name":"Ipatinga","containedInPlace":{"@type":"State","name":"Minas Gerais"}},
       "sameAs": ["https://www.instagram.com/graficaintromakeripatinga/"],
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+553173581976",
+        "telephone": "+5531973581976",
         "contactType": "customer service",
         "availableLanguage": "Portuguese"
       }
