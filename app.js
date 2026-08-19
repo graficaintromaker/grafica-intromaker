@@ -19,9 +19,25 @@
     });
   };
 
+  const ensureScratchCardCategory = () => {
+    const filters = document.querySelector(".filters");
+    if (!filters || filters.querySelector('[data-filter="raspadinhas"]')) return;
+
+    const button = document.createElement("button");
+    button.className = "filter";
+    button.dataset.filter = "raspadinhas";
+    button.type = "button";
+    button.textContent = "Raspadinha personalizada";
+
+    const promotionalButton = filters.querySelector('[data-filter="promocionais"]');
+    if (promotionalButton) promotionalButton.insertAdjacentElement("beforebegin", button);
+    else filters.appendChild(button);
+  };
+
   const applySiteFixes = () => {
     fixWhatsappLinks();
     fixSaturdayHours();
+    ensureScratchCardCategory();
   };
 
   applySiteFixes();
@@ -45,6 +61,17 @@
   const base=document.createElement("script");
   base.src="app-base.js?v=20260814-15";
   base.onload=()=>{
+    if (typeof products !== "undefined") {
+      products.forEach(product => {
+        const productText = `${product.name || ""} ${product.desc || ""}`.toLocaleLowerCase("pt-BR");
+        if (productText.includes("raspadinha") || productText.includes("raspe e ganhe")) {
+          product.category = "raspadinhas";
+          product.categoryLabel = "Raspadinhas personalizadas";
+        }
+      });
+      if (typeof renderProducts === "function") renderProducts();
+    }
+
     const extras=document.createElement("script");
     extras.src="novos-cartoes.js?v=20260814-15";
     document.body.appendChild(extras);
