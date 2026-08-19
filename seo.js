@@ -115,6 +115,7 @@
           <a href="cartao-de-agradecimento.html">Cartão de agradecimento<span>Para pedidos, lojas, semijoias, moda e embalagens.</span></a>
           <a href="adesivos-personalizados.html">Adesivos personalizados<span>Redondos, transparentes, metalizados e para fechamento.</span></a>
           <a href="tags-personalizadas.html">Tags personalizadas<span>Para roupas, semijoias, presentes e produtos.</span></a>
+          <a href="tags-para-semijoias.html">Tags para semijoias<span>Cartelas e tags para brincos, colares, pulseiras e acessórios.</span></a>
           <a href="cartao-de-visita.html">Cartões de visita<span>Modelos profissionais com diferentes acabamentos.</span></a>
           <a href="raspadinha-personalizada.html">Raspadinha personalizada<span>Raspe e ganhe para promoções, brindes, descontos e campanhas.</span></a>
           <a href="panfletos-personalizados.html">Panfletos e flyers<span>Divulgação para promoções, eventos e serviços.</span></a>
