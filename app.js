@@ -8,7 +8,23 @@
     });
   };
 
-  fixWhatsappLinks();
+  const fixSaturdayHours = () => {
+    document.querySelectorAll(".info-card p").forEach(paragraph => {
+      if (paragraph.innerHTML.includes("Sábado, das 9h30 às 12h30.")) {
+        paragraph.innerHTML = paragraph.innerHTML.replace(
+          "Sábado, das 9h30 às 12h30.",
+          "Sábado, das 9h30 às 11h30."
+        );
+      }
+    });
+  };
+
+  const applySiteFixes = () => {
+    fixWhatsappLinks();
+    fixSaturdayHours();
+  };
+
+  applySiteFixes();
 
   const nativeOpen = window.open.bind(window);
   window.open = (url, ...args) => {
@@ -18,7 +34,7 @@
     return nativeOpen(correctedUrl, ...args);
   };
 
-  const observer = new MutationObserver(fixWhatsappLinks);
+  const observer = new MutationObserver(applySiteFixes);
   observer.observe(document.documentElement, {
     childList: true,
     subtree: true,
