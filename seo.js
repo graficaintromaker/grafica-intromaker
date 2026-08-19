@@ -15,11 +15,11 @@
     el.setAttribute("content", content);
   };
 
-  ensureMeta("description", "Gráfica Intromaker em Ipatinga/MG: cartões de agradecimento, cartões de visita, tags, adesivos, panfletos e impressos personalizados. Peça orçamento pelo WhatsApp.");
+  ensureMeta("description", "Gráfica Intro Maker em Ipatinga/MG: cartões de agradecimento, cartões de visita, tags, adesivos, raspadinhas, panfletos e impressos personalizados. Peça orçamento pelo WhatsApp.");
   ensureMeta("robots", "index,follow,max-image-preview:large");
   ensureMeta("og:type", "website", true);
-  ensureMeta("og:title", "Gráfica Intromaker em Ipatinga/MG | Impressos Personalizados", true);
-  ensureMeta("og:description", "Cartões, tags, adesivos, panfletos e materiais personalizados com atendimento pelo WhatsApp.", true);
+  ensureMeta("og:title", "Gráfica Intro Maker em Ipatinga/MG | Impressos Personalizados", true);
+  ensureMeta("og:description", "Cartões, tags, adesivos, raspadinhas, panfletos e materiais personalizados com atendimento pelo WhatsApp.", true);
   ensureMeta("og:url", SITE, true);
   ensureMeta("og:image", SITE + "assets/06-adesivos-metalizados.jpg", true);
   ensureMeta("og:locale", "pt_BR", true);
@@ -39,14 +39,40 @@
     ld.type = "application/ld+json";
     ld.textContent = JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Gráfica Intromaker",
+      "@type": "LocalBusiness",
+      "@id": SITE + "#localbusiness",
+      "name": "Gráfica Intro Maker",
       "url": SITE,
+      "image": SITE + "assets/06-adesivos-metalizados.jpg",
       "logo": SITE + "assets/06-adesivos-metalizados.jpg",
       "email": "graficaintromaker@gmail.com",
       "telephone": "+5531973581976",
       "identifier": "CNPJ 38.283.331/0001-59",
-      "areaServed": {"@type":"City","name":"Ipatinga","containedInPlace":{"@type":"State","name":"Minas Gerais"}},
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ipatinga",
+        "addressRegion": "MG",
+        "addressCountry": "BR"
+      },
+      "areaServed": {
+        "@type":"City",
+        "name":"Ipatinga",
+        "containedInPlace":{"@type":"State","name":"Minas Gerais"}
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:30",
+          "closes": "17:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:30",
+          "closes": "11:30"
+        }
+      ],
       "sameAs": ["https://www.instagram.com/graficaintromakeripatinga/"],
       "contactPoint": {
         "@type": "ContactPoint",
@@ -83,13 +109,14 @@
         <div>
           <span class="eyebrow">GRÁFICA EM IPATINGA/MG</span>
           <h2>Impressos personalizados para valorizar sua marca.</h2>
-          <p>A Gráfica Intromaker produz cartões, tags, adesivos, panfletos e materiais personalizados. Escolha o produto, veja exemplos reais e solicite seu orçamento pelo WhatsApp.</p>
+          <p>A Gráfica Intro Maker produz cartões, tags, adesivos, raspadinhas, panfletos e materiais personalizados. Escolha o produto, veja exemplos reais e solicite seu orçamento pelo WhatsApp.</p>
         </div>
         <div class="seo-local-links">
           <a href="cartao-de-agradecimento.html">Cartão de agradecimento<span>Para pedidos, lojas, semijoias, moda e embalagens.</span></a>
           <a href="adesivos-personalizados.html">Adesivos personalizados<span>Redondos, transparentes, metalizados e para fechamento.</span></a>
           <a href="tags-personalizadas.html">Tags personalizadas<span>Para roupas, semijoias, presentes e produtos.</span></a>
           <a href="cartao-de-visita.html">Cartões de visita<span>Modelos profissionais com diferentes acabamentos.</span></a>
+          <a href="raspadinha-personalizada.html">Raspadinha personalizada<span>Raspe e ganhe para promoções, brindes, descontos e campanhas.</span></a>
           <a href="panfletos-personalizados.html">Panfletos e flyers<span>Divulgação para promoções, eventos e serviços.</span></a>
           <a class="seo-local-cta" href="${WA}" target="_blank" rel="noopener">Pedir orçamento pelo WhatsApp<span>Envie sua ideia, referência ou arte e receba orientação.</span></a>
         </div>
