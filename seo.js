@@ -123,6 +123,7 @@
           <a href="cartao-minimalista-personalizado.html">Cartão minimalista personalizado<span>Visual clean para marcas, produtos, embalagens e pedidos.</span></a>
           <a href="cartao-motivacional-personalizado.html">Cartão motivacional personalizado<span>Mensagens especiais para pedidos, presentes, embalagens e clientes.</span></a>
           <a href="cartao-institucional-personalizado.html">Cartão institucional personalizado<span>Para apresentação, boas-vindas, orientações e relacionamento com clientes.</span></a>
+          <a href="cartao-promocional-para-boutique.html">Cartão promocional para boutique<span>Para campanhas, lançamentos, descontos e relacionamento com clientes.</span></a>
           <a href="cartao-de-garantia.html">Cartão de garantia<span>Garantia e cuidados personalizados para semijoias, acessórios e produtos.</span></a>
           <a href="adesivos-personalizados.html">Adesivos personalizados<span>Redondos, transparentes, metalizados e para fechamento.</span></a>
           <a href="tags-personalizadas.html">Tags personalizadas<span>Para roupas, semijoias, presentes e produtos.</span></a>
