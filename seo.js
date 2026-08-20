@@ -121,6 +121,7 @@
           <a href="cartao-para-acompanhar-pedidos.html">Cartão para acompanhar pedidos<span>Para encomendas, embalagens, lojas e e-commerce.</span></a>
           <a href="cartao-de-boas-vindas.html">Cartão de boas-vindas<span>Para receber clientes com mensagem, orientações e informações da marca.</span></a>
           <a href="cartao-minimalista-personalizado.html">Cartão minimalista personalizado<span>Visual clean para marcas, produtos, embalagens e pedidos.</span></a>
+          <a href="cartao-motivacional-personalizado.html">Cartão motivacional personalizado<span>Mensagens especiais para pedidos, presentes, embalagens e clientes.</span></a>
           <a href="cartao-de-garantia.html">Cartão de garantia<span>Garantia e cuidados personalizados para semijoias, acessórios e produtos.</span></a>
           <a href="adesivos-personalizados.html">Adesivos personalizados<span>Redondos, transparentes, metalizados e para fechamento.</span></a>
           <a href="tags-personalizadas.html">Tags personalizadas<span>Para roupas, semijoias, presentes e produtos.</span></a>
