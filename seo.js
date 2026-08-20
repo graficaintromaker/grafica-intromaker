@@ -117,6 +117,7 @@
           <a href="cartao-com-acabamento-dourado.html">Cartão com acabamento dourado<span>Detalhe especial para destacar sua marca e valorizar a apresentação.</span></a>
           <a href="cartao-para-joias-e-semijoias.html">Cartão para joias e semijoias<span>Para agradecimento, cuidados, garantia e apresentação de acessórios.</span></a>
           <a href="cartao-com-verniz-localizado.html">Cartão com verniz localizado<span>Acabamento premium para destacar logo, textos e detalhes da arte.</span></a>
+          <a href="cartao-de-natal-personalizado.html">Cartão de Natal personalizado<span>Para presentes, pedidos, clientes, brindes e campanhas de fim de ano.</span></a>
           <a href="cartao-de-garantia.html">Cartão de garantia<span>Garantia e cuidados personalizados para semijoias, acessórios e produtos.</span></a>
           <a href="adesivos-personalizados.html">Adesivos personalizados<span>Redondos, transparentes, metalizados e para fechamento.</span></a>
           <a href="tags-personalizadas.html">Tags personalizadas<span>Para roupas, semijoias, presentes e produtos.</span></a>
