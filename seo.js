@@ -126,6 +126,7 @@
           <a href="cartao-promocional-para-boutique.html">Cartão promocional para boutique<span>Para campanhas, lançamentos, descontos e relacionamento com clientes.</span></a>
           <a href="cartao-de-cuidados-para-acessorios.html">Cartão de cuidados para acessórios<span>Orientações de conservação, uso e armazenamento para acompanhar produtos.</span></a>
           <a href="voucher-personalizado.html">Voucher personalizado<span>Para presentes, serviços, brindes, campanhas e promoções.</span></a>
+          <a href="cartao-fidelidade-personalizado.html">Cartão fidelidade personalizado<span>Para pontos, carimbos, recompensas, vantagens e incentivo à recompra.</span></a>
           <a href="cartao-de-garantia.html">Cartão de garantia<span>Garantia e cuidados personalizados para semijoias, acessórios e produtos.</span></a>
           <a href="adesivos-personalizados.html">Adesivos personalizados<span>Redondos, transparentes, metalizados e para fechamento.</span></a>
           <a href="tags-personalizadas.html">Tags personalizadas<span>Para roupas, semijoias, presentes e produtos.</span></a>
