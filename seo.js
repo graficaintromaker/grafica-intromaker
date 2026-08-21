@@ -133,6 +133,7 @@
           <a href="receituario-farmaceutico-personalizado.html">Receituário farmacêutico personalizado<span>Blocos personalizados para consultórios e atendimentos farmacêuticos.</span></a>
           <a href="kit-de-papelaria-personalizada-para-laceiras.html">Kit de papelaria para laçeiras<span>Papel de seda, cartões, tags e cartelas coordenados com a identidade da marca.</span></a>
           <a href="caixinha-personalizada-para-semijoias.html">Caixinha personalizada para semijoias<span>Embalagem personalizada para semijoias, pequenos acessórios, pedidos e presentes.</span></a>
+          <a href="panfleto-de-agradecimento-para-delivery-com-qr-code.html">Panfleto para delivery com QR Code<span>Agradecimento, QR Code e contato da marca para acompanhar pedidos e entregas.</span></a>
           <a href="cartao-de-garantia.html">Cartão de garantia<span>Garantia e cuidados personalizados para semijoias, acessórios e produtos.</span></a>
           <a href="adesivos-personalizados.html">Adesivos personalizados<span>Redondos, transparentes, metalizados e para fechamento.</span></a>
           <a href="tags-personalizadas.html">Tags personalizadas<span>Para roupas, semijoias, presentes e produtos.</span></a>
